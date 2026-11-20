@@ -1,0 +1,8 @@
+{
+  "name": "¿Quién quiere gobernar Uruguay?",
+  "description": "Simulador profundo de estrategia política, elecciones, parlamento, economía y gobierno adaptado a la realidad institucional de la República Oriental del Uruguay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

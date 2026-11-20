@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Newsreader', Georgia, serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* Paleta Oficial "El Despacho Republicano" (Obsidian War Room + Cream Parchment + Orange + Sage) */
+    --color-orange: #E87532;
+    --color-orange-hover: #D46422;
+    --color-peach: #FFB691;
+    --color-cream: #E9E2D4;
+    --color-cream-light: #F3EBDD;
+    --color-paper: #FAF6EE;
+    --color-cream-border: #DDD2BE;
+    --color-graphite: #252A2B;
+    --color-graphite-deep: #181C1D;
+    --color-obsidian: #0F1415;
+    --color-obsidian-lowest: #0A0F10;
+    --color-obsidian-low: #171C1D;
+    --color-obsidian-card: #1B2021;
+    --color-obsidian-high: #262B2C;
+    --color-obsidian-highest: #313637;
+    --color-sage: #557568;
+    --color-sage-light: #ACCEBF;
+    --color-sage-dark: #3D584D;
+  }
+
+  html {
+    font-family: var(--font-body);
+    background-color: #0F1415;
+    color: #DFE3E4;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: #0F1415;
+    color: #DFE3E4;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+  }
+
+  h1, h2, .font-editorial {
+    font-family: var(--font-display);
+  }
+
+  /* Evitar auto-zoom en iOS Safari al enfocar inputs/selects */
+  @media (max-width: 640px) {
+    input, select, textarea {
+      font-size: 16px;
+    }
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-data {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Superficies Stitch: War Room Obsidian + Dossier Pergamino Crema */
+.warroom-surface {
+  background-color: #171C1D;
+  border: 1px solid rgba(87, 66, 57, 0.45);
+  box-shadow: 0 10px 28px -12px rgba(0, 0, 0, 0.55);
+}
+
+.warroom-card {
+  background-color: #1B2021;
+  border: 1px solid rgba(87, 66, 57, 0.35);
+}
+
+.warroom-card-high {
+  background-color: #262B2C;
+  border: 1px solid rgba(87, 66, 57, 0.45);
+}
+
+/* Dossier en Pergamino Crema elevado sobre el tablero oscuro */
+.dossier-surface {
+  background-color: #FAF6EE;
+  color: #1E1B13;
+  border: 1px solid #DDD2BE;
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.5);
+}
+
+.parchment-dossier {
+  background-color: #E9E2D4;
+  color: #1E1B13;
+  border: 1px solid #CDC6B8;
+  box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.65);
+}
+
+.executive-action-btn {
+  background-color: #E87532;
+  color: #FFFFFF;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), inset 0 -2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.executive-action-btn:hover:not(:disabled) {
+  background-color: #D46422;
+}
+
+.game-border-amber {
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.35),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.55),
+    0 8px 20px -4px rgba(232, 117, 50, 0.45);
+}
+
+.game-border-gold {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 182, 145, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.8),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.scanline {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.18) 0px,
+    rgba(0, 0, 0, 0.18) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+@keyframes eq1 {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}
+@keyframes eq2 {
+  0%, 100% { height: 12px; }
+  50% { height: 6px; }
+}
+@keyframes eq3 {
+  0%, 100% { height: 8px; }
+  50% { height: 16px; }
+}
+
+.eq-bar-1 { animation: eq1 1.2s ease-in-out infinite; }
+.eq-bar-2 { animation: eq2 0.9s ease-in-out infinite; }
+.eq-bar-3 { animation: eq3 1.4s ease-in-out infinite; }
+
+.newspaper-dropcap::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.85;
+  padding-right: 0.45rem;
+  padding-top: 0.15rem;
+  color: #E87532;
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes subtleFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-editorial-in {
+  animation: subtleFadeSlide 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

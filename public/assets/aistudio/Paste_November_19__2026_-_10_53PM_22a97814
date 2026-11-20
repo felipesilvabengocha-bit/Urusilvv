@@ -1,0 +1,2137 @@
+<!-- Despacho Presidencial y Crisis Activa -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>¿Quién Quiere Gobernar Uruguay?</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#accebf", "inverse-on-surface": "#2c3132", "on-secondary-fixed-variant": "#4b463c", "tertiary-container": "#7b9c8e", "surface-container-high": "#262b2c", "outline": "#a58b80", "on-surface-variant": "#dec1b4", "inverse-primary": "#9e4200", "inverse-surface": "#dfe3e4", "error-container": "#93000a", "secondary-fixed": "#e9e2d4", "tertiary": "#accebf", "surface-container-highest": "#313637", "primary-fixed-dim": "#ffb691", "on-primary": "#552000", "on-tertiary-fixed-variant": "#2e4d41", "surface-variant": "#313637", "on-tertiary": "#17362b", "on-error-container": "#ffdad6", "outline-variant": "#574239", "on-primary-container": "#511e00", "on-secondary": "#343027", "primary": "#ffb691", "surface-bright": "#353a3b", "on-secondary-container": "#bbb4a7", "on-primary-fixed-variant": "#793100", "tertiary-fixed": "#c7eada", "on-primary-fixed": "#341100", "primary-fixed": "#ffdbcb", "on-background": "#dfe3e4", "primary-container": "#e87532", "surface-dim": "#0f1415", "on-tertiary-fixed": "#002117", "on-surface": "#dfe3e4", "background": "#0f1415", "surface-tint": "#ffb691", "surface-container-lowest": "#0a0f10", "surface-container-low": "#171c1d", "surface": "#0f1415", "secondary-container": "#4b463c", "on-tertiary-container": "#133329", "on-secondary-fixed": "#1e1b13", "on-error": "#690005", "error": "#ffb4ab", "secondary-fixed-dim": "#cdc6b8", "surface-container": "#1b2021", "secondary": "#cdc6b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-xl": ["Newsreader"], "label-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Newsreader"], "headline-xl-mobile": ["Newsreader"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"] }, fontSize: { "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-dim font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-20 px-gutter flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">14 MAR 2029 • AÑO ELECTORAL</span></div><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim leading-none">Despacho</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between gap-space-sm py-space-xs px-space-sm bg-surface-container-high/80 rounded"><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-primary-container text-[15px]">bolt</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">78 <span class="text-on-surface-variant font-normal">CP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-tertiary text-[15px]">trending_up</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">54% <span class="text-on-surface-variant font-normal">POP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-secondary-fixed-dim text-[15px]">account_balance</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">$4.2B <span class="text-on-surface-variant font-normal">UYU</span></span></div></div></div></header><main class="flex flex-col relative w-full min-h-screen pt-20 pb-36 px-gutter bg-surface-dim overflow-x-hidden"><div class="flex flex-col w-full gap-space-lg">
+<!-- Presidential Header Card -->
+<section class="flex flex-col gap-space-xs bg-surface-container-high p-space-md rounded-xl shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">República Oriental del Uruguay</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-0.5 rounded">2º Año Mandato</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface italic">Dr. Joaquín Arismendi</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Partido Nacional • Coalición Republicana • Torre Ejecutiva, Piso 11</p>
+</div>
+</section>
+<!-- Critical State Telemetry Grid -->
+<section class="grid grid-cols-2 gap-space-sm">
+<!-- Capital Político -->
+<div class="flex flex-col justify-between p-space-sm bg-surface-container rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Capital Político</span>
+<span class="material-symbols-outlined text-primary text-[16px]">bolt</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">76</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 100 CP</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 76%;"></div>
+</div>
+</div>
+<!-- Estabilidad Social -->
+<div class="flex flex-col justify-between p-space-sm bg-surface-container rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Paz Social</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">health_and_safety</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">68%</span>
+<span class="font-label-sm text-label-sm text-tertiary">Tensa</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<!-- Mayoría Parlamentaria -->
+<div class="flex flex-col justify-between p-space-sm bg-surface-container rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Hemiciclo</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">how_to_vote</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-label-md text-label-md text-on-surface">16<span class="text-on-surface-variant text-[10px]">/30 S</span></span>
+<span class="font-label-md text-label-md text-on-surface">49<span class="text-on-surface-variant text-[10px]">/99 D</span></span>
+</div>
+<span class="font-label-sm text-label-sm text-error mt-1 truncate">Mayoría frágil (-1 quorum)</span>
+</div>
+<!-- Déficit Fiscal -->
+<div class="flex flex-col justify-between p-space-sm bg-surface-container rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Déficit Fiscal</span>
+<span class="material-symbols-outlined text-error text-[16px]">account_balance_wallet</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-sm text-headline-sm text-error">-3.1%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Objetivo MEF: -2.7%</span>
+</div>
+</section>
+<!-- Editorial Still Life: El Escritorio Presidencial -->
+<section class="relative w-full rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
+<div class="relative w-full h-52">
+<img class="w-full h-full object-cover brightness-[0.78] contrast-[1.12]" data-alt="Cinematic chiaroscuro documentary photograph of the Uruguayan presidential desk inside Torre Ejecutiva Montevideo. A ceremonial blue and white silk sash draped across polished mahogany wood, a silver-carved mate calabash with gold bombilla, leather dossier stamped with the Uruguayan National Coat of Arms, a vintage encrypted red analog desk phone, and faint amber evening light streaming in through Plaza Independencia windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL5M_Z0kZneGRYTdan2t3UmgVNASeAfH_danFiHF38gYf7CeXEGwRNS_uWdYl0II0WHeQsPgGqGQZ1Ut0tvcCpB3vVE9VnhDkaHMsyOloWw-QnHVt1fhqTR7SeRETf_mLHV55pmZr0OlkWjd3p34xah8LHujlt9XFoivssADR9XrDORSXYnPtFRMTuWFGFg6VEkkWt3SGVAFk6JkfnpLIxp1yXViZ5QzfAZagCQLyw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-black/40"></div>
+<!-- Live Status Pill over image -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-black/60 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Gabinete de Crisis Activo</span>
+</div>
+<!-- Quick Desk Quote -->
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-mono tracking-widest">Torre Ejecutiva • Piso 11</span>
+<span class="font-headline-sm text-[17px] text-on-surface italic leading-tight">"Gobernar es elegir entre lo urgente y lo irreparable."</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high/90 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">desk</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dilema Urgente / Dossier Parchment Paper -->
+<section class="relative bg-secondary-fixed text-on-secondary-fixed p-space-md rounded-xl shadow-2xl flex flex-col gap-space-md">
+<!-- Dossier Header & Stamped Badges -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-secondary-fixed-variant font-semibold">Expediente N° 2029-PUERTO-04</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-secondary-fixed-variant">Dirección Nacional de Trabajo (DINATRA)</span>
+</div>
+<!-- Red Classification Stamp -->
+<div class="px-2 py-0.5 bg-error text-on-error font-label-sm text-label-sm tracking-widest uppercase font-bold rounded shadow-sm rotate-2">
+        Urgente / Reservado
+      </div>
+</div>
+<!-- Editorial Crisis Headline -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile leading-tight text-on-secondary-fixed">
+        Conflicto en Puerto de Montevideo: Paro sindical bloquea la zafra de carne y soja
+      </h2>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant leading-relaxed">
+        El sindicato portuario ha paralizado las grúas de contenedores. Hay tres buques cerealeros retenidos en rada y la Unión de Exportadores exige intervención ejecutiva antes de las 18:00 hs para evitar penalizaciones millonarias en divisas.
+      </p>
+</div>
+<!-- Impact Projections Ribbon -->
+<div class="grid grid-cols-3 gap-space-xs p-space-sm bg-secondary-fixed-dim/60 rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-secondary-fixed-variant uppercase">Aprobación</span>
+<span class="font-label-md text-label-md font-semibold text-error">-4% proyectado</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-secondary-fixed-variant uppercase">Paz Sindical</span>
+<span class="font-label-md text-label-md font-semibold text-error">-15 PIT-CNT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-secondary-fixed-variant uppercase">Confianza Mercados</span>
+<span class="font-label-md text-label-md font-semibold text-on-secondary-fixed">+8 pts (agro)</span>
+</div>
+</div>
+<!-- Interactive Decision Matrix -->
+<div class="flex flex-col gap-space-sm mt-1" id="crisis-decision-group">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-fixed-variant font-bold">
+        Resolución Presidencial Requerida:
+      </span>
+<!-- Option 1 -->
+<button class="w-full text-left p-space-sm bg-surface-dim text-on-surface rounded-lg shadow-md hover:bg-surface-bright active:scale-[0.99] transition-all flex flex-col gap-1 group" onclick="selectOption(this, 'Opción 1: Decretar Esencialidad', '-25 CP')">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-primary group-hover:underline">1. Decretar Esencialidad Inmediata</span>
+<span class="font-label-sm text-label-sm bg-primary/20 text-primary px-1.5 py-0.5 rounded font-mono">-25 CP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Firma directa del decreto. Desaloja terminales y contenta a exportadores, pero desata paro general nacional del PIT-CNT.
+        </p>
+</button>
+<!-- Option 2 -->
+<button class="w-full text-left p-space-sm bg-surface-container text-on-surface rounded-lg shadow hover:bg-surface-container-high active:scale-[0.99] transition-all flex flex-col gap-1 group" onclick="selectOption(this, 'Opción 2: Mesa de Diálogo DINATRA', '-$15M UYU')">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-secondary group-hover:underline">2. Mesa de Diálogo Extraordinaria</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-secondary px-1.5 py-0.5 rounded font-mono">-$15M UYU</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Convocar a DINATRA y sindicato con subsidio provisorio de turnos. Dilata la resolución 48 horas sin choques públicos.
+        </p>
+</button>
+<!-- Option 3 -->
+<button class="w-full text-left p-space-sm bg-surface-container text-on-surface rounded-lg shadow hover:bg-surface-container-high active:scale-[0.99] transition-all flex flex-col gap-1 group" onclick="selectOption(this, 'Opción 3: Concesión a Operadores Privados', 'Ruptura Bancada')">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-tertiary group-hover:underline">3. Concesión Parcial a Operadores Privados</span>
+<span class="font-label-sm text-label-sm bg-tertiary-container/30 text-tertiary px-1.5 py-0.5 rounded font-mono">Tensión Coalición</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Habilita operaciones ad-hoc de empresas privadas. Evita la huelga pero desata una rebelión en la bancada colorada e independiente.
+        </p>
+</button>
+</div>
+<!-- Active Selection Drawer / Notification -->
+<div class="hidden p-space-sm bg-surface-container-lowest text-primary rounded-lg flex items-center justify-between" id="decision-feedback">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span class="font-label-sm text-label-sm font-semibold" id="decision-text"></span>
+</div>
+<button class="px-space-sm py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded uppercase tracking-wider font-semibold" onclick="confirmResolution()">
+        Ejecutar Decreto
+      </button>
+</div>
+</section>
+<!-- Presidential Dossiers & Quick Tabs -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between border-none">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Despacho de Información</span>
+<span class="font-label-sm text-label-sm text-primary">Actualizado 11:42</span>
+</div>
+<!-- Tab navigation switches -->
+<div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container-lowest rounded-lg">
+<button class="py-1.5 text-center rounded font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold transition-all" id="tab-btn-agenda" onclick="switchTab('agenda')">
+        Agenda
+      </button>
+<button class="py-1.5 text-center rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="tab-btn-gabinete" onclick="switchTab('gabinete')">
+        Gabinete
+      </button>
+<button class="py-1.5 text-center rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" id="tab-btn-prensa" onclick="switchTab('prensa')">
+        Prensa
+      </button>
+</div>
+<!-- Tab 1: Agenda Semanal -->
+<div class="flex flex-col gap-space-xs" id="tab-agenda">
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-mono">14:00</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Reunión con Ministra de Economía (MEF)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Revisión de metas de inflación y regla fiscal</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">chevron_right</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-mono">16:30</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Audiencia con Embajador de Brasil</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dragado binacional Laguna Merín y aranceles Mercosur</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">chevron_right</span>
+</div>
+</div>
+<!-- Tab 2: Gabinete de Ministros (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-xs" id="tab-gabinete">
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold text-xs">MI</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Min. Interior: Dr. Néstor Larrañaga</span>
+<span class="font-body-sm text-body-sm text-tertiary">Lealtad: 84% • Tensión operativa baja</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded">Firme</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-error font-bold text-xs">MT</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Min. Trabajo: Esc. Mariana Silva</span>
+<span class="font-body-sm text-body-sm text-error">Lealtad: 58% • Bajo asedio sindical</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error bg-error/10 px-2 py-0.5 rounded">Crítico</span>
+</div>
+</div>
+<!-- Tab 3: Prensa Nacional (Hidden by default) -->
+<div class="hidden flex flex-col gap-space-xs" id="tab-prensa">
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Búsqueda</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hace 32 min</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface italic">"Tensa pulseada en la interna del gobierno por el control del gasto público."</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">El País</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hace 1 h</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface italic">"Exportadores advierten colapso logístico si el Ejecutivo no actúa hoy."</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold">La Diaria</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hace 2 h</span>
+</div>
+<span class="font-headline-sm text-[15px] text-on-surface italic">"Sindicatos portuarios denuncian precarización y alertan por medidas extremas."</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let selectedDecree = null;
+
+  function selectOption(btn, label, cost) {
+    const allButtons = document.querySelectorAll('#crisis-decision-group button');
+    allButtons.forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary-container');
+    });
+    btn.classList.add('bg-primary-container', 'text-on-primary-container');
+
+    const feedback = document.getElementById('decision-feedback');
+    const text = document.getElementById('decision-text');
+    feedback.classList.remove('hidden');
+    text.innerText = label + ' [' + cost + ']';
+    selectedDecree = label;
+  }
+
+  function confirmResolution() {
+    if (!selectedDecree) return;
+    const feedback = document.getElementById('decision-feedback');
+    feedback.innerHTML = `
+      <div class="flex items-center gap-2 py-1 w-full justify-between">
+        <span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+          Decreto publicado en el Diario Oficial
+        </span>
+        <span class="font-label-sm text-[10px] text-on-surface-variant font-mono">11:45 HS</span>
+      </div>
+    `;
+  }
+
+  function switchTab(tabId) {
+    const tabs = ['agenda', 'gabinete', 'prensa'];
+    tabs.forEach(t => {
+      document.getElementById('tab-' + t).classList.add('hidden');
+      const btn = document.getElementById('tab-btn-' + t);
+      btn.classList.remove('bg-surface-container', 'text-on-surface', 'font-semibold');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    document.getElementById('tab-' + tabId).classList.remove('hidden');
+    const activeBtn = document.getElementById('tab-btn-' + tabId);
+    activeBtn.classList.remove('text-on-surface-variant');
+    activeBtn.classList.add('bg-surface-container', 'text-on-surface', 'font-semibold');
+  }
+</script><footer class="w-full mt-space-xl mb-space-lg flex flex-col items-center justify-center gap-space-xs"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant/70 tracking-widest uppercase"><a class="hover:text-primary transition-colors" href="https://www.instagram.com/felisilvv/" rel="noopener noreferrer" target="_blank">IG: @felisilvv</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="https://www.instagram.com/silvvdesign/" rel="noopener noreferrer" target="_blank">DISEÑO: @silvvdesign</a></div><span class="font-headline-sm text-[11px] italic text-on-surface-variant/40 tracking-normal">República Oriental del Uruguay • Despacho Presidencial</span></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container bg-surface-container-high/90"><div class="flex items-stretch justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] transition-colors rounded text-primary-container bg-surface-container-high/90" data-path="despacho" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Despacho</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="mapa-de-uruguay" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-sm text-[10px] tracking-tight truncate">Mapa</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="parlamento" href="#"><span class="material-symbols-outlined text-[20px]">how_to_vote</span><span class="font-label-sm text-[10px] tracking-tight truncate">Parlamento</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="campana-y-balotaje" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-sm text-[10px] tracking-tight truncate">Campaña</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="gabinete-y-economia" href="#"><span class="material-symbols-outlined text-[20px]">balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Gabinete</span></a></div></nav></body></html>
+
+<!-- Pantalla de Inicio Cinematográfica -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><title>¿Quién Quiere Gobernar Uruguay?</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#accebf", "inverse-on-surface": "#2c3132", "on-secondary-fixed-variant": "#4b463c", "tertiary-container": "#7b9c8e", "surface-container-high": "#262b2c", "outline": "#a58b80", "on-surface-variant": "#dec1b4", "inverse-primary": "#9e4200", "inverse-surface": "#dfe3e4", "error-container": "#93000a", "secondary-fixed": "#e9e2d4", "tertiary": "#accebf", "surface-container-highest": "#313637", "primary-fixed-dim": "#ffb691", "on-primary": "#552000", "on-tertiary-fixed-variant": "#2e4d41", "surface-variant": "#313637", "on-tertiary": "#17362b", "on-error-container": "#ffdad6", "outline-variant": "#574239", "on-primary-container": "#511e00", "on-secondary": "#343027", "primary": "#ffb691", "surface-bright": "#353a3b", "on-secondary-container": "#bbb4a7", "on-primary-fixed-variant": "#793100", "tertiary-fixed": "#c7eada", "on-primary-fixed": "#341100", "primary-fixed": "#ffdbcb", "on-background": "#dfe3e4", "primary-container": "#e87532", "surface-dim": "#0f1415", "on-tertiary-fixed": "#002117", "on-surface": "#dfe3e4", "background": "#0f1415", "surface-tint": "#ffb691", "surface-container-lowest": "#0a0f10", "surface-container-low": "#171c1d", "surface": "#0f1415", "secondary-container": "#4b463c", "on-tertiary-container": "#133329", "on-secondary-fixed": "#1e1b13", "on-error": "#690005", "error": "#ffb4ab", "secondary-fixed-dim": "#cdc6b8", "surface-container": "#1b2021", "secondary": "#cdc6b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-xl": ["Newsreader"], "label-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Newsreader"], "headline-xl-mobile": ["Newsreader"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"] }, fontSize: { "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-dim font-body-md text-on-surface antialiased pt-safe pb-safe selection:bg-primary-container selection:text-on-primary-container"><main class="flex flex-col relative w-full min-h-screen bg-surface-dim overflow-x-hidden"><div class="flex flex-col w-full relative overflow-hidden select-none pb-8">
+<!-- Dynamic Atmospheric Glows -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-80 h-72 bg-gradient-to-b from-primary-container/25 via-primary/10 to-transparent blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-64 h-64 bg-tertiary-container/10 blur-3xl pointer-events-none"></div>
+<!-- Audio Ambience & Version Bar -->
+<div class="px-gutter pt-3 flex items-center justify-between z-10">
+<div class="flex items-center gap-1.5 bg-surface-container-high/80 px-2.5 py-1 rounded-full backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">v1.0.4 • ESTADO SOBERANO</span>
+</div>
+<!-- Audio toggle micro-interaction -->
+<button class="flex items-center gap-1.5 bg-surface-container-high/80 hover:bg-surface-container-highest px-3 py-1 rounded-full text-secondary active:scale-95 transition-all" id="audio-toggle" onclick="toggleAudio()">
+<span class="material-symbols-outlined text-primary" id="audio-icon" style="font-size: 16px;">volume_up</span>
+<span class="font-label-sm text-label-sm text-secondary" id="audio-label">HIMNO / MARCHA</span>
+</button>
+</div>
+<!-- Hero Monument Backdrop & National Emblem -->
+<div class="relative w-full px-gutter mt-3 flex flex-col items-center">
+<!-- Stylized Sol de Mayo & Legislative Crest -->
+<div class="relative flex items-center justify-center mb-1">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center relative shadow-xl">
+<!-- Sun ray ornamental SVG -->
+<svg class="w-14 h-14 text-primary animate-[spin_40s_linear_infinite]" fill="currentColor" viewbox="0 0 100 100">
+<circle class="text-primary-container" cx="50" cy="50" fill="currentColor" r="16"></circle>
+<g stroke="currentColor" stroke-linecap="round" stroke-width="2.5">
+<line x1="50" x2="50" y1="8" y2="24"></line>
+<line x1="50" x2="50" y1="76" y2="92"></line>
+<line x1="8" x2="24" y1="50" y2="50"></line>
+<line x1="76" x2="92" y1="50" y2="50"></line>
+<line x1="20" x2="32" y1="20" y2="32"></line>
+<line x1="68" x2="80" y1="68" y2="80"></line>
+<line x1="20" x2="32" y1="80" y2="68"></line>
+<line x1="68" x2="80" y1="32" y2="20"></line>
+</g>
+</svg>
+<span class="material-symbols-outlined absolute text-on-surface text-xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<!-- Subtle Uruguayan Ribbon -->
+<div class="absolute -bottom-2 flex items-center gap-0.5 bg-surface-container-highest/90 px-2 py-0.5 rounded-full shadow-md">
+<span class="w-2.5 h-1 bg-sky-400 rounded-sm"></span>
+<span class="w-2.5 h-1 bg-secondary-fixed rounded-sm"></span>
+<span class="w-2.5 h-1 bg-sky-400 rounded-sm"></span>
+</div>
+</div>
+<!-- Monument Clairobscur Visual Placeholder -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mt-3 shadow-2xl bg-surface-container-low">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity filter contrast-125" data-alt="Monolithic architectural facade of the Palacio Legislativo of Montevideo, Uruguay at twilight. Dramatic chiaroscuro lighting with deep graphite shadows, warm amber zenith spotlight illuminating the neoclassical pediment, marble columns, solemn political statecraft aesthetic, high contrast editorial Suzerain mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGqxEfgBDkWrPfPBCdlg16UkQxrHyr-d1FV2vuVjclAhC_SkEB8crcqr7vsvKXSHuOsDM9Mx-qy7LNFW5U-ThA043XKnW4ltwcEnkI8tQbN8fSw_GgoIFjHb8ModBUSk7u1SMPmtVT7FljiGNVY2gXGh2LkRB88fImcLMck9q0zdeHuBlokCxH2Af6Q77fp6jgJeUrdsiMlKdhNOUTt4d4doQKkcfb2lAif9D3cEFn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent"></div>
+<div class="absolute top-2 right-2 flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded text-tertiary">
+<span class="material-symbols-outlined text-xs">verified_user</span>
+<span class="font-label-sm text-label-sm">PODER EJECUTIVO</span>
+</div>
+</div>
+<!-- Editorial Typography Title -->
+<div class="text-center mt-4 px-2">
+<p class="font-label-md text-label-md tracking-[0.25em] text-primary uppercase font-semibold mb-1">
+        SIMULADOR POLÍTICO DE ALTA ESTRATEGIA
+      </p>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary-fixed drop-shadow-md leading-tight uppercase font-bold tracking-tight">
+        ¿QUIÉN QUIERE GOBERNAR <span class="text-primary-container">URUGUAY</span>?
+      </h1>
+<!-- Solemn Motto Between Guilloche Ornamentation -->
+<div class="flex items-center justify-center gap-2 mt-2 px-3">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
+<p class="font-headline-sm text-headline-sm italic text-secondary-fixed text-center px-1">
+          «El poder se conquista. Gobernar es otra historia»
+        </p>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Political Difficulty Selector Dial -->
+<div class="px-gutter mt-5">
+<div class="bg-surface-container-low p-1 rounded-xl flex items-center shadow-inner">
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-semibold flex items-center justify-center gap-1.5 shadow" id="diff-const" onclick="setDifficulty('const')">
+<span class="material-symbols-outlined text-sm">gavel</span>
+        Modo Constitucional
+      </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5" id="diff-real" onclick="setDifficulty('real')">
+<span class="material-symbols-outlined text-sm">local_fire_department</span>
+        Realpolitik Feroz
+      </button>
+</div>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim text-center mt-1.5 italic" id="diff-desc">
+      Equilibrio estricto de mayorías parlamentarias, interpelaciones senatoriales y pactos de coalición republicana.
+    </p>
+</div>
+<!-- Main Strategic Actions (Ergonomic bottom cluster) -->
+<div class="px-gutter mt-4 flex flex-col gap-2.5">
+<!-- Primary CTA: NUEVA PARTIDA -->
+<button class="relative group w-full bg-primary-container hover:bg-primary-container/90 active:scale-[0.98] transition-all rounded-xl p-4 shadow-xl overflow-hidden text-left flex items-center justify-between">
+<div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center gap-3.5 z-10">
+<div class="w-12 h-12 rounded-lg bg-on-primary-container/20 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">how_to_vote</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container font-bold tracking-tight">NUEVA PARTIDA</span>
+<span class="w-2 h-2 rounded-full bg-on-primary-container animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container/80 tracking-wider">ASUMIR LA BANDA PRESIDENCIAL</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-primary-container text-2xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Secondary CTA: CONTINUAR PARTIDA (Quick-Save Telemetry) -->
+<button class="w-full bg-surface-container-high hover:bg-surface-container-highest active:scale-[0.98] transition-all rounded-xl p-3.5 shadow-md flex items-center justify-between text-left">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface truncate">CONTINUAR PARTIDA</span>
+<span class="bg-tertiary-container/30 text-tertiary px-1.5 py-0.2 rounded font-label-sm text-label-sm">AUTOGUARDADO</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary truncate">
+            Mandato 2025-2030 • Mes 18 • 52% Aprobación
+          </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-xl">chevron_right</span>
+</button>
+<!-- Tertiary CTA: CARGAR PARTIDA -->
+<button class="w-full bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition-all rounded-xl py-3 px-3.5 shadow-sm flex items-center justify-between text-left">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">inventory_2</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">CARGAR ARCHIVO DE ESTADO</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">3 PARTIDAS</span>
+</button>
+</div>
+<!-- Auxiliary Operational Controls -->
+<div class="px-gutter grid grid-cols-3 gap-2 mt-3">
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-xl">query_stats</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">ARCHIVO &amp; DATOS</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all">
+<div class="relative">
+<span class="material-symbols-outlined text-tertiary text-xl">military_tech</span>
+<span class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container font-label-sm text-[8px] px-1 rounded-full font-bold">14/36</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">LOGROS PATRIOS</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-secondary text-xl">tune</span>
+<span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">PROTOCOLO</span>
+</button>
+</div>
+<!-- Daily Historical Dilemma Interactive Preview Card -->
+<div class="px-gutter mt-5">
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">history_edu</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">DILEMA HISTÓRICO DEL DÍA</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">AÑO 1904</span>
+</div>
+<div class="flex gap-3 items-start">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0 bg-surface-container-highest" data-alt="Sepia toned archival photographic tintype of historic peace treaty negotiations in rural Uruguay, vintage cavalry tents, poncho-wearing caudillos and suited diplomats consulting parchment treaties, harsh chiaroscuro sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrObBo-USgVWKHqQvWLoM470Gq-s48KkxPsCdAptZWzVf742NtZBSiFbLYMBv9w4qG6gtO21rxpbrm2iNPlKRGtTVQmNDVb74VpK5y4mrR8hC9k5lWGKzf0D5f1Q8KiOjbJKo47gEr-kzXZIzuItzthfNZGjgB1acTtR07rl1aAnrTAHAlCicGnCxir2IZuM7a6axxVzneRAHLr06hIAMs8ZnG_JQB9YA3oAKGjVOw"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1 font-semibold">
+            Paz de Aceguá: Pacto de Hermanos
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim line-clamp-2 mt-0.5">
+            ¿Firmarás la concordia electoral con el caudillismo o consolidarás el monopolio fiscal de la capital?
+          </p>
+</div>
+</div>
+<!-- Quick interactive decision preview -->
+<div class="mt-3 pt-2.5 flex items-center justify-between bg-surface-container/60 -mx-3.5 -mb-3.5 px-3.5 py-2">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">shield</span> +8 Cohesión Departamental
+        </span>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-fixed flex items-center gap-0.5 font-semibold">
+          EXPLORAR ARCHIVO <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Official Footer & Creative Credits -->
+<div class="px-gutter mt-6 flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-3 font-label-md text-label-md">
+<a class="text-primary hover:text-primary-fixed underline transition-colors flex items-center gap-1" href="https://www.instagram.com/felisilvv/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs">person</span> IG: @felisilvv
+      </a>
+<span class="text-outline-variant">•</span>
+<a class="text-tertiary hover:text-tertiary-fixed underline transition-colors flex items-center gap-1" href="https://www.instagram.com/silvvdesign/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs">palette</span> DISEÑO: @silvvdesign
+      </a>
+</div>
+<p class="font-body-sm text-body-sm text-secondary/70 mt-1.5 max-w-xs">
+      Montevideo, República Oriental del Uruguay. Todos los derechos reservados.
+    </p>
+</div>
+</div>
+<script>
+  let isMuted = false;
+  function toggleAudio() {
+    isMuted = !isMuted;
+    const icon = document.getElementById('audio-icon');
+    const label = document.getElementById('audio-label');
+    if (isMuted) {
+      icon.innerText = 'volume_off';
+      icon.classList.remove('text-primary');
+      icon.classList.add('text-secondary');
+      label.innerText = 'SILENCIADO';
+    } else {
+      icon.innerText = 'volume_up';
+      icon.classList.add('text-primary');
+      icon.classList.remove('text-secondary');
+      label.innerText = 'HIMNO / MARCHA';
+    }
+  }
+
+  function setDifficulty(mode) {
+    const btnConst = document.getElementById('diff-const');
+    const btnReal = document.getElementById('diff-real');
+    const desc = document.getElementById('diff-desc');
+
+    if (mode === 'const') {
+      btnConst.className = 'flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-semibold flex items-center justify-center gap-1.5 shadow';
+      btnReal.className = 'flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5';
+      desc.innerText = 'Equilibrio estricto de mayorías parlamentarias, interpelaciones senatoriales y pactos de coalición republicana.';
+    } else {
+      btnReal.className = 'flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all bg-error-container text-on-error-container font-semibold flex items-center justify-center gap-1.5 shadow';
+      btnConst.className = 'flex-1 py-1.5 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5';
+      desc.innerText = 'Huelgas generales, presiones de cámaras agropecuarias, filtraciones mediáticas y crisis cambiaria sin tregua.';
+    }
+  }
+</script></main></body></html>
+
+<!-- Hemiciclo del Parlamento y Negociación de Leyes -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>¿Quién Quiere Gobernar Uruguay?</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#accebf", "inverse-on-surface": "#2c3132", "on-secondary-fixed-variant": "#4b463c", "tertiary-container": "#7b9c8e", "surface-container-high": "#262b2c", "outline": "#a58b80", "on-surface-variant": "#dec1b4", "inverse-primary": "#9e4200", "inverse-surface": "#dfe3e4", "error-container": "#93000a", "secondary-fixed": "#e9e2d4", "tertiary": "#accebf", "surface-container-highest": "#313637", "primary-fixed-dim": "#ffb691", "on-primary": "#552000", "on-tertiary-fixed-variant": "#2e4d41", "surface-variant": "#313637", "on-tertiary": "#17362b", "on-error-container": "#ffdad6", "outline-variant": "#574239", "on-primary-container": "#511e00", "on-secondary": "#343027", "primary": "#ffb691", "surface-bright": "#353a3b", "on-secondary-container": "#bbb4a7", "on-primary-fixed-variant": "#793100", "tertiary-fixed": "#c7eada", "on-primary-fixed": "#341100", "primary-fixed": "#ffdbcb", "on-background": "#dfe3e4", "primary-container": "#e87532", "surface-dim": "#0f1415", "on-tertiary-fixed": "#002117", "on-surface": "#dfe3e4", "background": "#0f1415", "surface-tint": "#ffb691", "surface-container-lowest": "#0a0f10", "surface-container-low": "#171c1d", "surface": "#0f1415", "secondary-container": "#4b463c", "on-tertiary-container": "#133329", "on-secondary-fixed": "#1e1b13", "on-error": "#690005", "error": "#ffb4ab", "secondary-fixed-dim": "#cdc6b8", "surface-container": "#1b2021", "secondary": "#cdc6b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-xl": ["Newsreader"], "label-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Newsreader"], "headline-xl-mobile": ["Newsreader"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"] }, fontSize: { "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-dim font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-20 px-gutter flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">14 MAR 2029 • AÑO ELECTORAL</span></div><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim leading-none">Parlamento</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between gap-space-sm py-space-xs px-space-sm bg-surface-container-high/80 rounded"><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-primary-container text-[15px]">bolt</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">78 <span class="text-on-surface-variant font-normal">CP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-tertiary text-[15px]">trending_up</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">54% <span class="text-on-surface-variant font-normal">POP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-secondary-fixed-dim text-[15px]">account_balance</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">$4.2B <span class="text-on-surface-variant font-normal">UYU</span></span></div></div></div></header><main class="flex flex-col relative w-full min-h-screen pt-20 pb-36 px-gutter bg-surface-dim overflow-x-hidden"><div class="flex flex-col w-full gap-space-lg select-none">
+<!-- Chamber Toggle Tabs -->
+<div class="flex p-1 bg-surface-container-high rounded-xl">
+<button class="flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary-container text-on-primary-container shadow-sm" id="tab-senado" onclick="switchChamber('senado')">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>Senado (31)</span>
+</button>
+<button class="flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface" id="tab-diputados" onclick="switchChamber('diputados')">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>Diputados (99)</span>
+</button>
+</div>
+<!-- Interactive Hemicircle Dossier Card -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-md relative overflow-hidden">
+<!-- Archival Watermark Seal -->
+<div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full opacity-[0.03] bg-primary-container pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-[120px]">account_balance</span>
+</div>
+<!-- Chamber Header Status -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary" id="chamber-subtitle">Palacio Legislativo • Sala de Sesiones</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="chamber-title">Cámara de Senadores</h2>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="quorum-badge">Quórum: 31/31</span>
+</div>
+</div>
+<!-- Hemicircle Graphic Arc Container -->
+<div class="relative w-full flex flex-col items-center justify-center pt-2 pb-1">
+<div class="w-full flex justify-center items-center" id="hemicircle-mount">
+<!-- SVG injected dynamically for Senators or Deputies -->
+</div>
+<!-- Vicepresidency & Dais Indicator -->
+<div class="flex items-center gap-2 mt-2 px-3 py-1 bg-surface-container-high rounded-full shadow-inner">
+<div class="w-3 h-3 rounded-full bg-primary flex items-center justify-center shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed" id="dais-label">Presidencia: Vicepresidenta de la República (Voto Dirimente)</span>
+</div>
+</div>
+<!-- Parties Breakdown Legenda -->
+<div class="grid grid-cols-3 gap-1.5 pt-space-md mt-space-sm bg-surface-container-low rounded-lg p-2.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#1e40af] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">FA</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="count-fa">16 bancas</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#38bdf8] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">PN</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="count-pn">9 bancas</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#dc2626] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">PC</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="count-pc">4 bancas</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#eab308] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">CA</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="count-ca">1 banca</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#a855f7] shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">PI</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="count-pi">0 bancas</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shrink-0"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">Mayoría</span>
+<span class="font-label-md text-label-md text-primary font-semibold" id="count-maj">16 votos</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Bill in Debate (High Stakes Callout) -->
+<div class="flex flex-col bg-surface-container-high rounded-xl p-space-md shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">priority_high</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-semibold">Proyecto En Discusión Plenaria</span>
+</div>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold uppercase animate-pulse">Votación Inminente</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+      Ley de Reforma de la Seguridad Social y Modificación de Cajas Paraestatales
+    </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+      Reestructuración previsional integral de las cajas de Profesionales y Notarial. Respaldo clave para contener el déficit fiscal proyectado.
+    </p>
+<!-- Vote Progress Visual Bar -->
+<div class="mt-space-md flex flex-col gap-1.5 bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Votos Confirmados:</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="votos-counter">49 / 50</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">(Diputados)</span>
+</div>
+<span class="font-label-sm text-[10px] text-error font-semibold uppercase" id="status-alerta">¡A 1 voto de caerse!</span>
+</div>
+<!-- Dual Gauge Bar -->
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden flex relative">
+<div class="h-full bg-primary-container transition-all duration-500 rounded-l-full" id="vote-progress-fill" style="width: 49.49%;"></div>
+<div class="w-0.5 h-full bg-on-surface absolute left-[50.5%] top-0 z-10 opacity-70"></div>
+</div>
+<div class="flex items-center justify-between text-[10px] font-label-sm text-on-surface-variant">
+<span>48 FA + 1 Disidente PC</span>
+<span class="text-primary font-semibold">Meta de Aprobación: 50 votos</span>
+</div>
+</div>
+</div>
+<!-- Key Dissident & Coalition Negotiators -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed">Legisladores Clave en Disputa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Casos Críticos</span>
+</div>
+<!-- Legislator Card 1: Rivera Deputy -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-md gap-space-sm" id="card-diputado-rivera">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-[#dc2626]/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#dc2626] text-[22px]">how_to_vote</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Diputado Disidente de Rivera</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.2 rounded bg-[#dc2626]/20 text-[#fca5a5]">PC</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bancada Colorado Batllista • Voto Pendiente</span>
+</div>
+</div>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary-fixed-dim uppercase shrink-0" id="rivera-status-tag">Dudoso</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">announcement</span>
+<p class="font-body-sm text-body-sm text-secondary-fixed">
+<strong class="text-on-surface font-semibold">Exigencia:</strong> Compromiso presupuestal vinculante para la creación de una Zona Franca Comercial e Industrial en Rivera.
+        </p>
+</div>
+<!-- Action Button for Rivera -->
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold flex items-center justify-between hover:brightness-110 active:scale-[0.98] transition-all shadow-sm" id="btn-conceder-rivera" onclick="negotiateRivera()">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+          Firmar Fondo Zona Franca Rivera
+        </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-on-primary-container/20 text-on-primary font-bold">-15 CP</span>
+</button>
+</div>
+<!-- Legislator Card 2: Radical Senator Canelones -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-md gap-space-sm" id="card-senador-canelones">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-[#1e40af]/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#38bdf8] text-[22px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Senador de Canelones</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.2 rounded bg-[#1e40af]/30 text-[#93c5fd]">FA</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ala Sindical Radical • Oposición Feroz</span>
+</div>
+</div>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-error-container text-on-error-container uppercase shrink-0" id="canelones-status-tag">Amenaza Activa</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">crisis_alert</span>
+<p class="font-body-sm text-body-sm text-secondary-fixed">
+<strong class="text-on-surface font-semibold">Tensión:</strong> Amenaza con convocar a sala e interpelar a la Ministra de Economía si no se modifican los topes de retiro no contributivos.
+        </p>
+</div>
+<!-- Action Button for Canelones -->
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium flex items-center justify-between hover:bg-surface-container-highest active:scale-[0.98] transition-all" id="btn-aplaced-canelones" onclick="appeaseCanelones()">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+          Comprometer Subsidio a Caja Notarial
+        </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-semibold">-30 CP</span>
+</button>
+</div>
+</div>
+<!-- Tactical Negotiation Toolbar -->
+<div class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Maniobras Tácticas de Salón</h4>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Saldo: 78 CP</span>
+</div>
+<div class="grid grid-cols-1 gap-2 pt-1">
+<button class="w-full p-2.5 rounded-lg bg-surface-container-high flex items-center justify-between text-left hover:bg-surface-container-highest active:scale-[0.99] transition-all" onclick="applyTactic('gabinete', 30)">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">person_add</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Ofrecer Subsecretaría en Gabinete</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sella acuerdo firme con bancada menor</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-lowest text-primary-container font-bold shrink-0">-30 CP</span>
+</button>
+<button class="w-full p-2.5 rounded-lg bg-surface-container-high flex items-center justify-between text-left hover:bg-surface-container-highest active:scale-[0.99] transition-all" onclick="applyTactic('articulado', 15)">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">edit_note</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Modificar Articulado 45 (Transición)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suaviza resistencia de gremios paraestatales</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-lowest text-tertiary font-bold shrink-0">-15 CP</span>
+</button>
+<button class="w-full p-2.5 rounded-lg bg-surface-container-high flex items-center justify-between text-left hover:bg-surface-container-highest active:scale-[0.99] transition-all" onclick="applyTactic('disciplina', 0)">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">psychology</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Llamar a Disciplina Partidaria</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Riesgo de fractura interna de bancada</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-lowest text-secondary-fixed font-bold shrink-0">0 CP</span>
+</button>
+</div>
+</div>
+<!-- Historical Ledger: Promulgadas vs Vetos Presidenciales -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-md shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">menu_book</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Historial Legislativo del Período</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Legislatura XLIX</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Promulgadas Box -->
+<div class="flex flex-col bg-surface-container p-space-sm rounded-lg gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-tertiary uppercase font-semibold">Promulgadas</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">14</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">8 con mayoría estricta</span>
+</div>
+<!-- Vetos Box -->
+<div class="flex flex-col bg-surface-container p-space-sm rounded-lg gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[10px] text-error uppercase font-semibold">Vetos Presidenciales</span>
+<span class="material-symbols-outlined text-error text-[18px]">block</span>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">2</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">1 Veto Total / 1 Parcial</span>
+</div>
+</div>
+<!-- Recent Historic Feats -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between py-1.5 px-2 rounded bg-surface-container text-body-sm">
+<span class="text-on-surface font-body-sm truncate">Ley 20.312 • Hidrógeno Verde y Bahía de Paysandú</span>
+<span class="font-label-sm text-[10px] text-tertiary font-semibold ml-2">PROMULGADA</span>
+</div>
+<div class="flex items-center justify-between py-1.5 px-2 rounded bg-surface-container text-body-sm">
+<span class="text-on-surface font-body-sm truncate">Ley 20.298 • Tope a Deudores del BHU</span>
+<span class="font-label-sm text-[10px] text-error font-semibold ml-2">VETADA (Art. 7)</span>
+</div>
+</div>
+</div>
+<!-- Notification Banner Modal State -->
+<div class="hidden fixed bottom-20 left-4 right-4 z-50 bg-primary-container text-on-primary-container p-3 rounded-lg shadow-2xl flex items-center justify-between transition-all duration-300" id="toast-negotiation">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-semibold" id="toast-text">Acuerdo parlamentario registrado</span>
+</div>
+<button class="text-on-primary-container/80 hover:text-on-primary-container" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  let currentChamber = 'senado';
+  let votosDiputados = 49;
+  let riveraConcedido = false;
+  let canelonesAplacado = false;
+
+  // Render Senators Hemicircle (31 seats: 16 FA, 9 PN, 4 PC, 1 CA, 1 VP Presidencia)
+  function renderSenado() {
+    const seats = [
+      ...Array(16).fill('#1e40af'), // FA
+      ...Array(9).fill('#38bdf8'),  // PN
+      ...Array(4).fill('#dc2626'),  // PC
+      ...Array(1).fill('#eab308'),  // CA
+      '#e87532'                    // Presidencia Vicepresidenta
+    ];
+    
+    // Draw 2 concentric radial tiers
+    let circlesSvg = '';
+    const cx = 150;
+    const cy = 135;
+    
+    // Inner tier (12 seats)
+    const r1 = 65;
+    const totalTier1 = 13;
+    for (let i = 0; i < totalTier1; i++) {
+      const angle = Math.PI - (i / (totalTier1 - 1)) * Math.PI;
+      const x = cx + r1 * Math.cos(angle);
+      const y = cy - r1 * Math.sin(angle);
+      const color = seats[i] || '#313637';
+      circlesSvg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6" fill="${color}" stroke="#171c1d" stroke-width="1.5" class="transition-transform hover:scale-125 cursor-pointer"/>`;
+    }
+
+    // Outer tier (18 seats)
+    const r2 = 98;
+    const totalTier2 = 18;
+    for (let i = 0; i < totalTier2; i++) {
+      const idx = totalTier1 + i;
+      const angle = Math.PI - (i / (totalTier2 - 1)) * Math.PI;
+      const x = cx + r2 * Math.cos(angle);
+      const y = cy - r2 * Math.sin(angle);
+      const color = seats[idx] || '#313637';
+      circlesSvg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6" fill="${color}" stroke="#171c1d" stroke-width="1.5" class="transition-transform hover:scale-125 cursor-pointer"/>`;
+    }
+
+    // Dais center seat
+    circlesSvg += `<circle cx="150" cy="130" r="7" fill="#ffb691" stroke="#511e00" stroke-width="2"/>`;
+
+    return `
+      <svg viewBox="0 0 300 150" class="w-full max-w-[290px] h-auto drop-shadow-md">
+        <path d="M 40 135 A 110 110 0 0 1 260 135" fill="none" stroke="#262b2c" stroke-width="2" stroke-dasharray="3,3"/>
+        ${circlesSvg}
+      </svg>
+    `;
+  }
+
+  // Render Deputies Hemicircle (99 seats: 48 FA, 31 PN, 13 PC, 5 CA, 1 PI + 1 extra)
+  function renderDiputados() {
+    const seats = [
+      ...Array(48).fill('#1e40af'), // FA
+      ...Array(31).fill('#38bdf8'), // PN
+      ...Array(13).fill('#dc2626'), // PC
+      ...Array(5).fill('#eab308'),  // CA
+      ...Array(1).fill('#a855f7'),  // PI
+      '#7b9c8e'                    // Independiente/Disidente
+    ];
+
+    let circlesSvg = '';
+    const cx = 150;
+    const cy = 138;
+    const tiers = [
+      { r: 48, count: 18 },
+      { r: 72, count: 26 },
+      { r: 96, count: 32 },
+      { r: 118, count: 23 }
+    ];
+
+    let seatPointer = 0;
+    tiers.forEach(tier => {
+      for (let i = 0; i < tier.count; i++) {
+        const angle = Math.PI - (i / (tier.count - 1)) * Math.PI;
+        const x = cx + tier.r * Math.cos(angle);
+        const y = cy - tier.r * Math.sin(angle);
+        const color = seats[seatPointer] || '#dec1b4';
+        seatPointer++;
+        circlesSvg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.2" fill="${color}" stroke="#171c1d" stroke-width="1"/>`;
+      }
+    });
+
+    return `
+      <svg viewBox="0 0 300 150" class="w-full max-w-[290px] h-auto drop-shadow-md">
+        <path d="M 30 138 A 120 120 0 0 1 270 138" fill="none" stroke="#262b2c" stroke-width="1.5" stroke-dasharray="2,2"/>
+        ${circlesSvg}
+      </svg>
+    `;
+  }
+
+  function switchChamber(chamber) {
+    currentChamber = chamber;
+    const tabSen = document.getElementById('tab-senado');
+    const tabDip = document.getElementById('tab-diputados');
+    const title = document.getElementById('chamber-title');
+    const sub = document.getElementById('chamber-subtitle');
+    const quorum = document.getElementById('quorum-badge');
+    const dais = document.getElementById('dais-label');
+    const mount = document.getElementById('hemicircle-mount');
+
+    const countFa = document.getElementById('count-fa');
+    const countPn = document.getElementById('count-pn');
+    const countPc = document.getElementById('count-pc');
+    const countCa = document.getElementById('count-ca');
+    const countPi = document.getElementById('count-pi');
+    const countMaj = document.getElementById('count-maj');
+
+    if (chamber === 'senado') {
+      tabSen.className = 'flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary-container text-on-primary-container shadow-sm';
+      tabDip.className = 'flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+      title.innerText = 'Cámara de Senadores';
+      sub.innerText = 'Palacio Legislativo • Sala de Sesiones';
+      quorum.innerText = 'Quórum: 31/31';
+      dais.innerText = 'Presidencia: Vicepresidenta de la República (Voto Dirimente)';
+      mount.innerHTML = renderSenado();
+
+      countFa.innerText = '16 bancas';
+      countPn.innerText = '9 bancas';
+      countPc.innerText = '4 bancas';
+      countCa.innerText = '1 banca';
+      countPi.innerText = '0 bancas';
+      countMaj.innerText = '16 votos';
+    } else {
+      tabDip.className = 'flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 bg-primary-container text-on-primary-container shadow-sm';
+      tabSen.className = 'flex-1 py-2 px-space-sm rounded-lg font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+      title.innerText = 'Cámara de Representantes';
+      sub.innerText = 'Palacio Legislativo • Sala de Diputados';
+      quorum.innerText = 'Quórum: 99/99';
+      dais.innerText = 'Mesa de Presidencia: Presidente de la Cámara de Representantes';
+      mount.innerHTML = renderDiputados();
+
+      countFa.innerText = '48 bancas';
+      countPn.innerText = '31 bancas';
+      countPc.innerText = '13 bancas';
+      countCa.innerText = '5 bancas';
+      countPi.innerText = '1 banca';
+      countMaj.innerText = '50 votos';
+    }
+  }
+
+  function negotiateRivera() {
+    if (riveraConcedido) return;
+    riveraConcedido = true;
+    votosDiputados = 50;
+
+    const btn = document.getElementById('btn-conceder-rivera');
+    const tag = document.getElementById('rivera-status-tag');
+    const counter = document.getElementById('votos-counter');
+    const alert = document.getElementById('status-alerta');
+    const progress = document.getElementById('vote-progress-fill');
+
+    btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+    btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+    btn.innerHTML = `<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">verified</span>Fondo Acordado • Voto Afirmativo Asegurado</span>`;
+    
+    tag.className = 'font-label-sm text-[10px] px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container uppercase shrink-0 font-bold';
+    tag.innerText = 'VOTO ASEGURADO';
+
+    counter.innerText = '50 / 50';
+    counter.className = 'font-label-sm text-label-sm text-tertiary font-bold';
+    
+    alert.innerText = '¡Mayoría Absoluta Alcanzada!';
+    alert.className = 'font-label-sm text-[10px] text-tertiary font-semibold uppercase';
+
+    progress.style.width = '50.5%';
+    progress.classList.remove('bg-primary-container');
+    progress.classList.add('bg-tertiary');
+
+    showToast('¡Voto 50 asegurado! Ley lista para sanción en Representantes (-15 CP)');
+  }
+
+  function appeaseCanelones() {
+    if (canelonesAplacado) return;
+    canelonesAplacado = true;
+
+    const btn = document.getElementById('btn-aplaced-canelones');
+    const tag = document.getElementById('canelones-status-tag');
+
+    btn.className = 'w-full py-2.5 px-space-md rounded-lg bg-surface-container text-tertiary font-label-md text-label-md font-medium flex items-center justify-between pointer-events-none opacity-80';
+    btn.innerHTML = `<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">done_all</span>Subsidio Comprometido • Interpelación Declinada</span>`;
+    
+    tag.className = 'font-label-sm text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-tertiary uppercase shrink-0';
+    tag.innerText = 'Neutralizado';
+
+    showToast('Pacto con ala sindical sellado: Interpelación desactivada (-30 CP)');
+  }
+
+  function applyTactic(type, cost) {
+    if (type === 'gabinete') {
+      showToast('Oferta ministerial enviada a bancada independiente (-30 CP)');
+    } else if (type === 'articulado') {
+      showToast('Texto reformulado en Comisión de Hacienda (-15 CP)');
+    } else {
+      showToast('Convocatoria de urgencia a directiva partidaria realizada');
+    }
+  }
+
+  function showToast(text) {
+    const toast = document.getElementById('toast-negotiation');
+    const toastText = document.getElementById('toast-text');
+    toastText.innerText = text;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 4000);
+  }
+
+  function dismissToast() {
+    document.getElementById('toast-negotiation').classList.add('hidden');
+  }
+
+  // Initial draw
+  switchChamber('senado');
+</script><footer class="w-full mt-space-xl mb-space-lg flex flex-col items-center justify-center gap-space-xs"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant/70 tracking-widest uppercase"><a class="hover:text-primary transition-colors" href="https://www.instagram.com/felisilvv/" rel="noopener noreferrer" target="_blank">IG: @felisilvv</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="https://www.instagram.com/silvvdesign/" rel="noopener noreferrer" target="_blank">DISEÑO: @silvvdesign</a></div><span class="font-headline-sm text-[11px] italic text-on-surface-variant/40 tracking-normal">República Oriental del Uruguay • Despacho Presidencial</span></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container bg-surface-container-high/90"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="despacho" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Despacho</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="mapa-de-uruguay" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-sm text-[10px] tracking-tight truncate">Mapa</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] transition-colors rounded text-primary-container bg-surface-container-high/90" data-path="parlamento" href="#"><span class="material-symbols-outlined text-[20px]">how_to_vote</span><span class="font-label-sm text-[10px] tracking-tight truncate">Parlamento</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="campana-y-balotaje" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-sm text-[10px] tracking-tight truncate">Campaña</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="gabinete-y-economia" href="#"><span class="material-symbols-outlined text-[20px]">balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Gabinete</span></a></div></nav></body></html>
+
+<!-- Mapa Político de los 19 Departamentos -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>¿Quién Quiere Gobernar Uruguay?</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#accebf", "inverse-on-surface": "#2c3132", "on-secondary-fixed-variant": "#4b463c", "tertiary-container": "#7b9c8e", "surface-container-high": "#262b2c", "outline": "#a58b80", "on-surface-variant": "#dec1b4", "inverse-primary": "#9e4200", "inverse-surface": "#dfe3e4", "error-container": "#93000a", "secondary-fixed": "#e9e2d4", "tertiary": "#accebf", "surface-container-highest": "#313637", "primary-fixed-dim": "#ffb691", "on-primary": "#552000", "on-tertiary-fixed-variant": "#2e4d41", "surface-variant": "#313637", "on-tertiary": "#17362b", "on-error-container": "#ffdad6", "outline-variant": "#574239", "on-primary-container": "#511e00", "on-secondary": "#343027", "primary": "#ffb691", "surface-bright": "#353a3b", "on-secondary-container": "#bbb4a7", "on-primary-fixed-variant": "#793100", "tertiary-fixed": "#c7eada", "on-primary-fixed": "#341100", "primary-fixed": "#ffdbcb", "on-background": "#dfe3e4", "primary-container": "#e87532", "surface-dim": "#0f1415", "on-tertiary-fixed": "#002117", "on-surface": "#dfe3e4", "background": "#0f1415", "surface-tint": "#ffb691", "surface-container-lowest": "#0a0f10", "surface-container-low": "#171c1d", "surface": "#0f1415", "secondary-container": "#4b463c", "on-tertiary-container": "#133329", "on-secondary-fixed": "#1e1b13", "on-error": "#690005", "error": "#ffb4ab", "secondary-fixed-dim": "#cdc6b8", "surface-container": "#1b2021", "secondary": "#cdc6b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-xl": ["Newsreader"], "label-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Newsreader"], "headline-xl-mobile": ["Newsreader"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"] }, fontSize: { "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-dim font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-20 px-gutter flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">14 MAR 2029 • AÑO ELECTORAL</span></div><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm italic text-secondary-fixed-dim leading-none">Mapa De Uruguay</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between gap-space-sm py-space-xs px-space-sm bg-surface-container-high/80 rounded"><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-primary-container text-[15px]">bolt</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">78 <span class="text-on-surface-variant font-normal">CP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-tertiary text-[15px]">trending_up</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">54% <span class="text-on-surface-variant font-normal">POP</span></span></div><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-secondary-fixed-dim text-[15px]">account_balance</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">$4.2B <span class="text-on-surface-variant font-normal">UYU</span></span></div></div></div></header><main class="flex flex-col relative w-full min-h-screen pt-20 pb-36 px-gutter bg-surface-dim overflow-x-hidden"><div class="flex flex-col w-full gap-space-md">
+<!-- Sub-header Filter Tabs (Categorías de Mapa de Estrategia) -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="mode-tab shrink-0 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold shadow-md flex items-center gap-1.5 transition-all" id="btn-mode-poder" onclick="switchMapMode('poder')">
+<span class="material-symbols-outlined text-[15px]">flag</span>
+<span>Poder Departamental</span>
+</button>
+<button class="mode-tab shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-all flex items-center gap-1.5" id="btn-mode-voto" onclick="switchMapMode('voto')">
+<span class="material-symbols-outlined text-[15px]">poll</span>
+<span>Voto 2029</span>
+</button>
+<button class="mode-tab shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-all flex items-center gap-1.5" id="btn-mode-inversion" onclick="switchMapMode('inversion')">
+<span class="material-symbols-outlined text-[15px]">payments</span>
+<span>Inversión Pública</span>
+</button>
+<button class="mode-tab shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-all flex items-center gap-1.5" id="btn-mode-empleo" onclick="switchMapMode('empleo')">
+<span class="material-symbols-outlined text-[15px]">work</span>
+<span>Desempleo</span>
+</button>
+</div>
+<!-- War Room Tactical Canvas -->
+<div class="relative w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl p-space-sm">
+<!-- Status HUD overlay -->
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1 pointer-events-none">
+<div class="flex items-center gap-2 bg-surface-container-high/90 backdrop-blur-md px-2.5 py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-medium uppercase tracking-wider" id="map-mode-label">INTENDENCIAS 2025-2030</span>
+</div>
+<span class="font-headline-sm text-headline-sm italic text-on-surface font-medium" id="hover-dept-name">Canelones</span>
+</div>
+<!-- Quick national control indicator pill -->
+<div class="absolute top-3 right-3 z-10 bg-surface-container-high/90 backdrop-blur-md px-2.5 py-1 rounded flex items-center gap-1.5 shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">19/19 DEPTOS</span>
+</div>
+<!-- Uruguay Stylized Tactical Vector Map (Accurate 19 Departamentos Geopolíticos) -->
+<div class="w-full flex items-center justify-center py-2">
+<svg class="w-full max-w-[340px] h-[375px] drop-shadow-[0_10px_25px_rgba(0,0,0,0.7)] select-none" fill="none" id="uruguay-svg" viewbox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialgradient cx="50%" cy="50%" id="oceanGlow" r="50%">
+<stop offset="0%" stop-color="#171c1d" stop-opacity="0.6"></stop>
+<stop offset="100%" stop-color="#0a0f10" stop-opacity="1"></stop>
+</radialgradient>
+</defs>
+<!-- Río de la Plata & Océano Atlántico Watermark Lines -->
+<path d="M 40,410 C 130,425 210,440 280,455" fill="none" stroke="#252a2b" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path d="M 60,430 C 160,442 240,452 320,458" fill="none" stroke="#1b2021" stroke-width="1"></path>
+<text fill="#4b463c" font-family="Newsreader" font-size="9" font-style="italic" letter-spacing="2" x="75" y="445">RÍO DE LA PLATA</text>
+<text fill="#4b463c" font-family="Newsreader" font-size="8" font-style="italic" letter-spacing="1" x="270" y="420">OCÉANO ATLÁNTICO</text>
+<!-- 1. ARTIGAS (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 120,40 L 165,15 L 200,50 L 175,82 L 140,88 L 120,40 Z" data-name="Artigas" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-artigas" onclick="selectDepartment('artigas')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="152" y="48">ART</text>
+<!-- 2. SALTO (FA) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 100,90 L 140,88 L 175,82 L 190,120 L 165,145 L 90,140 Z" data-name="Salto" data-party="fa" fill="#D9383A" fill-opacity="0.9" id="dept-salto" onclick="selectDepartment('salto')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#ffffff" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="135" y="120">SLT</text>
+<!-- 3. PAYSANDÚ (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 90,140 L 165,145 L 180,185 L 125,200 L 80,185 Z" data-name="Paysandú" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-paysandu" onclick="selectDepartment('paysandu')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="125" y="172">PAY</text>
+<!-- 4. RIVERA (PC) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 200,50 L 255,58 L 265,115 L 220,135 L 190,120 L 175,82 Z" data-name="Rivera" data-party="pc" fill="#E87532" fill-opacity="0.95" id="dept-rivera" onclick="selectDepartment('rivera')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#ffffff" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="226" y="96">RIV</text>
+<!-- 5. TACUAREMBÓ (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 190,120 L 220,135 L 265,115 L 260,175 L 230,225 L 180,220 L 180,185 L 165,145 Z" data-name="Tacuarembó" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-tacuarembo" onclick="selectDepartment('tacuarembo')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="10" font-weight="600" pointer-events="none" text-anchor="middle" x="218" y="175">TAC</text>
+<!-- 6. CERRO LARGO (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 265,115 L 320,135 L 340,190 L 290,215 L 260,175 Z" data-name="Cerro Largo" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-cerrolargo" onclick="selectDepartment('cerrolargo')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="295" y="165">CLG</text>
+<!-- 7. RÍO NEGRO (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 80,185 L 125,200 L 180,205 L 160,250 L 95,245 L 75,230 Z" data-name="Río Negro" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-rionegro" onclick="selectDepartment('rionegro')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="120" y="224">RNE</text>
+<!-- 8. DURAZNO (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 160,250 L 180,205 L 230,225 L 235,270 L 180,285 Z" data-name="Durazno" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-durazno" onclick="selectDepartment('durazno')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="195" y="250">DUR</text>
+<!-- 9. TREINTA Y TRES (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 260,175 L 290,215 L 340,190 L 345,260 L 290,265 L 235,245 L 230,225 Z" data-name="Treinta y Tres" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-treintaytres" onclick="selectDepartment('treintaytres')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="285" y="235">TYT</text>
+<!-- 10. SORIANO (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 75,230 L 95,245 L 140,255 L 125,305 L 70,290 Z" data-name="Soriano" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-soriano" onclick="selectDepartment('soriano')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="100" y="275">SOR</text>
+<!-- 11. FLORES (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 140,255 L 160,250 L 180,285 L 155,315 L 125,305 Z" data-name="Flores" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-flores" onclick="selectDepartment('flores')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="8" font-weight="600" pointer-events="none" text-anchor="middle" x="150" y="285">FLS</text>
+<!-- 12. FLORIDA (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 180,285 L 235,270 L 245,315 L 205,345 L 170,335 L 155,315 Z" data-name="Florida" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-florida" onclick="selectDepartment('florida')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="195" y="315">FLA</text>
+<!-- 13. LAVALLEJA (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 235,270 L 290,265 L 295,335 L 255,360 L 245,315 Z" data-name="Lavalleja" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-lavalleja" onclick="selectDepartment('lavalleja')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="265" y="312">LAV</text>
+<!-- 14. ROCHA (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 290,265 L 345,260 L 375,305 L 330,380 L 295,360 L 295,335 Z" data-name="Rocha" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-rocha" onclick="selectDepartment('rocha')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="325" y="322">RCH</text>
+<!-- 15. COLONIA (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 70,290 L 125,305 L 130,345 L 85,365 L 55,335 Z" data-name="Colonia" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-colonia" onclick="selectDepartment('colonia')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="96" y="335">COL</text>
+<!-- 16. SAN JOSÉ (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 125,305 L 155,315 L 170,335 L 175,375 L 130,370 L 130,345 Z" data-name="San José" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-sanjose" onclick="selectDepartment('sanjose')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="8" font-weight="600" pointer-events="none" text-anchor="middle" x="148" y="348">SJO</text>
+<!-- 17. CANELONES (FA - SELECTED DEFAULT) -->
+<path class="cursor-pointer transition-all duration-200" d="M 175,375 L 170,335 L 205,345 L 235,360 L 225,395 L 195,398 L 180,385 Z" data-name="Canelones" data-party="fa" fill="#D9383A" fill-opacity="0.95" id="dept-canelones" onclick="selectDepartment('canelones')" stroke="#ffb691" stroke-width="2.5"></path>
+<text fill="#ffffff" font-family="JetBrains Mono" font-size="9" font-weight="700" pointer-events="none" text-anchor="middle" x="198" y="372">CAN</text>
+<!-- 18. MONTEVIDEO (FA) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 175,375 L 185,385 L 195,398 L 180,405 L 165,390 Z" data-name="Montevideo" data-party="fa" fill="#D9383A" fill-opacity="0.9" id="dept-montevideo" onclick="selectDepartment('montevideo')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#ffffff" font-family="JetBrains Mono" font-size="7" font-weight="700" pointer-events="none" text-anchor="middle" x="180" y="396">MVD</text>
+<!-- 19. MALDONADO (PN) -->
+<path class="cursor-pointer transition-all duration-200 hover:opacity-85" d="M 235,360 L 255,360 L 295,360 L 280,405 L 225,395 Z" data-name="Maldonado" data-party="pn" fill="#4285F4" fill-opacity="0.88" id="dept-maldonado" onclick="selectDepartment('maldonado')" stroke="#0a0f10" stroke-width="1.8"></path>
+<text fill="#dfe3e4" font-family="JetBrains Mono" font-size="9" font-weight="600" pointer-events="none" text-anchor="middle" x="256" y="382">MAL</text>
+</svg>
+</div>
+<!-- Map Legend: Partidos con Balance Nacional -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs bg-surface-container/70 rounded-lg p-2 backdrop-blur-sm">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-3 h-3 rounded-full bg-[#4285F4] shrink-0"></span>
+<div class="flex flex-col min-w-0 leading-tight">
+<span class="font-label-sm text-[10px] text-on-surface truncate font-semibold">P. Nacional</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">15 Intendencias</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-3 h-3 rounded-full bg-[#D9383A] shrink-0"></span>
+<div class="flex flex-col min-w-0 leading-tight">
+<span class="font-label-sm text-[10px] text-on-surface truncate font-semibold">Fte. Amplio</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">3 Intendencias</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="w-3 h-3 rounded-full bg-primary-container shrink-0"></span>
+<div class="flex flex-col min-w-0 leading-tight">
+<span class="font-label-sm text-[10px] text-on-surface truncate font-semibold">P. Colorado</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">1 Intendencia</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet / Ficha Táctica del Departamento (Interactive Detail Card) -->
+<div class="w-full bg-surface-container rounded-xl shadow-xl p-space-md flex flex-col gap-space-md transition-all">
+<!-- Header Ficha -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded font-semibold bg-[#D9383A]/20 text-[#ffb4ab]" id="badge-partido">FRENTE AMPLIO</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase">Distrito Clave #2</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile italic text-on-surface mt-0.5" id="sheet-dept-name">CANELONES</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="sheet-dept-meta">588.000 hab. • 15.2% del Padrón Nacional</span>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Intendente</span>
+<span class="font-body-md text-body-md font-semibold text-secondary-fixed" id="sheet-dept-gov">M. Orsi / S. Carámbula</span>
+</div>
+</div>
+<!-- Clima Político & Polarización Box -->
+<div class="bg-surface-container-high rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">how_to_vote</span>
+          Clima Político &amp; Intención 2029
+        </span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold" id="sheet-status-tag">BATALLA FEROZ</span>
+</div>
+<!-- Voting Bar Representation -->
+<div class="w-full flex flex-col gap-1">
+<div class="w-full h-3 rounded-full overflow-hidden flex bg-surface-container-lowest">
+<div class="h-full bg-[#D9383A] transition-all duration-300" id="bar-fa" style="width: 48%;"></div>
+<div class="h-full bg-[#4285F4] transition-all duration-300" id="bar-cr" style="width: 44%;"></div>
+<div class="h-full bg-secondary-container transition-all duration-300" id="bar-ind" style="width: 8%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-0.5">
+<span class="text-[#ffb4ab]" id="val-fa">FA: 48%</span>
+<span class="text-tertiary-fixed-dim" id="val-cr">Coalición: 44%</span>
+<span class="text-on-secondary-container" id="val-ind">Indecisos: 8%</span>
+</div>
+</div>
+</div>
+<!-- Indicadores Socioeconómicos Regionales -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ecosistema Económico</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface mt-1" id="sheet-dept-econ">Agroindustria, Vitivinicultura &amp; Parque de las Ciencias</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Empleo &amp; PBI Regional</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold" id="sheet-dept-empleo">61.2%</span>
+<span class="font-label-sm text-[10px] text-tertiary-fixed-dim">Tasa Ocupación</span>
+</div>
+</div>
+</div>
+<!-- Acciones Tácticas Presidenciales (Thumb-Zone Priority) -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Acciones de Despacho Disponibles:</span>
+<div class="flex flex-col gap-2">
+<button class="w-full flex items-center justify-between p-3 rounded-lg bg-primary-container text-on-primary-container hover:brightness-110 active:scale-[0.99] transition-all shadow-md" onclick="executeAction('gira', 10, 'Gira departamental desplegada con éxito')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[19px]">travel_explore</span>
+<div class="flex flex-col text-left leading-tight">
+<span class="font-body-md text-body-md font-semibold">Gira de Campaña Departamental</span>
+<span class="font-label-sm text-[10px] text-on-primary-container/80">Recorrer Ruta 5 e inaugurar comité</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-on-primary-container/20 px-2 py-0.5 rounded">-10 CP</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright active:scale-[0.99] transition-all" onclick="executeAction('obra', 45, 'Compromiso de infraestructura sellado')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[19px]">construction</span>
+<div class="flex flex-col text-left leading-tight">
+<span class="font-body-md text-body-md font-semibold">Prometer Puente / Centro Hospitalario</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Afecta tesoro nacional (+6% Aprobación)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-surface-container-lowest text-secondary-fixed px-2 py-0.5 rounded">-$45M UYU</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright active:scale-[0.99] transition-all" onclick="executeAction('alianza', 0, 'Pacto de gobernabilidad negociado en reserva')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[19px]">handshake</span>
+<div class="flex flex-col text-left leading-tight">
+<span class="font-body-md text-body-md font-semibold">Alianza con Caudillo / Edil Local</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Garantiza lealtad en la Junta Departamental</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary px-2 py-0.5 rounded">CONSENSO</span>
+</button>
+</div>
+</div>
+<!-- Notification Toast Bar -->
+<div class="hidden opacity-0 transition-opacity duration-300 w-full p-2.5 rounded-lg bg-tertiary-container text-on-tertiary-container text-center font-label-sm text-label-sm font-semibold flex items-center justify-center gap-2" id="tactical-toast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="tactical-toast-msg">Decreto emitido con éxito.</span>
+</div>
+</div>
+</div>
+<script>
+  // Base de datos de los 19 departamentos orientales
+  const DEPARTAMENTOS = {
+    canelones: {
+      name: "CANELONES",
+      party: "fa",
+      partyName: "Frente Amplio",
+      partyColor: "#D9383A",
+      partyBadgeText: "#ffb4ab",
+      meta: "588.000 hab. • 2º distrito electoral del país",
+      gov: "M. Orsi / S. Carámbula",
+      status: "BATALLA FEROZ",
+      statusBg: "bg-error-container",
+      statusColor: "text-on-error-container",
+      fa: 48, cr: 44, ind: 8,
+      econ: "Agroindustria, Vitivinicultura & Corredor Logístico Ruta 101",
+      empleo: "61.2%"
+    },
+    montevideo: {
+      name: "MONTEVIDEO",
+      party: "fa",
+      partyName: "Frente Amplio",
+      partyColor: "#D9383A",
+      partyBadgeText: "#ffb4ab",
+      meta: "1.380.000 hab. • Sede de los Poderes del Estado",
+      gov: "C. Cosse / M. Zunino",
+      status: "BASTIÓN FA",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-on-surface",
+      fa: 56, cr: 37, ind: 7,
+      econ: "Servicios financieros, Puerto Tecnológico & Polo Audiovisual",
+      empleo: "63.5%"
+    },
+    salto: {
+      name: "SALTO",
+      party: "fa",
+      partyName: "Frente Amplio",
+      partyColor: "#D9383A",
+      partyBadgeText: "#ffb4ab",
+      meta: "133.000 hab. • Frontera hidroeléctrica del litoral",
+      gov: "A. Lima",
+      status: "ZONA DISPUTADA",
+      statusBg: "bg-error-container",
+      statusColor: "text-on-error-container",
+      fa: 45, cr: 47, ind: 8,
+      econ: "Cítricos, Complejos Termales & Represa de Salto Grande",
+      empleo: "56.4%"
+    },
+    rivera: {
+      name: "RIVERA",
+      party: "pc",
+      partyName: "Partido Colorado",
+      partyColor: "#E87532",
+      partyBadgeText: "#ffdbcb",
+      meta: "109.000 hab. • Bastión histórico Batllista",
+      gov: "R. Sander",
+      status: "HEGEMONÍA COLORADA",
+      statusBg: "bg-primary-container",
+      statusColor: "text-on-primary-container",
+      fa: 28, cr: 64, ind: 8,
+      econ: "Comercio binacional fronterizo, Silvicultura & Ganadería",
+      empleo: "58.1%"
+    },
+    maldonado: {
+      name: "MALDONADO",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "192.000 hab. • Capital turística del Cono Sur",
+      gov: "E. Antía",
+      status: "BASTIÓN BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 35, cr: 58, ind: 7,
+      econ: "Real estate de lujo, Hotelería Punta del Este & Construcción",
+      empleo: "64.8%"
+    },
+    rocha: {
+      name: "ROCHA",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "74.000 hab. • Costa oceánica y humedales",
+      gov: "A. Umpiérrez",
+      status: "EN DISPUTA",
+      statusBg: "bg-error-container",
+      statusColor: "text-on-error-container",
+      fa: 46, cr: 47, ind: 7,
+      econ: "Ecoturismo, Arrozal & Pesca artesanal",
+      empleo: "57.2%"
+    },
+    colonia: {
+      name: "COLONIA",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "132.000 hab. • Entrada histórica fluvial",
+      gov: "C. Moreira",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 36, cr: 57, ind: 7,
+      econ: "Polo Lechero, Turismo Histórico UNESCO & Puerto Franco",
+      empleo: "62.4%"
+    },
+    paysandu: {
+      name: "PAYSANDÚ",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "119.000 hab. • Ciudad heroica industrial",
+      gov: "N. Olivera",
+      status: "CABEZA A CABEZA",
+      statusBg: "bg-error-container",
+      statusColor: "text-on-error-container",
+      fa: 46, cr: 48, ind: 6,
+      econ: "Industria cervecera, Combustibles verdes & Forestación",
+      empleo: "58.9%"
+    },
+    artigas: {
+      name: "ARTIGAS",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "78.000 hab. • Vértice norte fronterizo",
+      gov: "P. Caram",
+      status: "BASTIÓN BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 24, cr: 69, ind: 7,
+      econ: "Caña de azúcar Bella Unión, Piedras Preciosas (Ágatas)",
+      empleo: "54.6%"
+    },
+    tacuarembo: {
+      name: "TACUAREMBÓ",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "93.000 hab. • Corazón gauchesco y forestal",
+      gov: "W. Ezquerra",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 29, cr: 63, ind: 8,
+      econ: "Planta celulosa UPM Paso de los Toros, Ganadería de cría",
+      empleo: "59.0%"
+    },
+    rionegro: {
+      name: "RÍO NEGRO",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "57.000 hab. • Cuna agroexportadora Fray Bentos",
+      gov: "O. Terzaghi / O. Lafluf",
+      status: "VOLÁTIL",
+      statusBg: "bg-error-container",
+      statusColor: "text-on-error-container",
+      fa: 47, cr: 46, ind: 7,
+      econ: "Pulpas de celulosa UPM Fray Bentos & Puerto Ultramarino",
+      empleo: "60.1%"
+    },
+    soriano: {
+      name: "SORIANO",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "84.000 hab. • Capital nacional del agro",
+      gov: "G. Besozzi",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 34, cr: 59, ind: 7,
+      econ: "Expoactiva Nacional, Soja de primera & Trigo",
+      empleo: "61.0%"
+    },
+    sanjose: {
+      name: "SAN JOSÉ",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "115.000 hab. • Franja metropolitana sur",
+      gov: "A. Bentaberri",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 41, cr: 52, ind: 7,
+      econ: "Industria automotriz, Quesería artesanal & Logística",
+      empleo: "60.4%"
+    },
+    flores: {
+      name: "FLORES",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "26.000 hab. • Menor población del país",
+      gov: "F. Echeverría",
+      status: "BLANCO HISTÓRICO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 25, cr: 67, ind: 8,
+      econ: "Gruta del Palacio UNESCO, Lana merino & Agricultura extensiva",
+      empleo: "62.1%"
+    },
+    florida: {
+      name: "FLORIDA",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "69.000 hab. • Altar de la Patria",
+      gov: "G. López",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 36, cr: 56, ind: 8,
+      econ: "Cuenca lechera Conaprole & Trazabilidad ovina",
+      empleo: "59.8%"
+    },
+    durazno: {
+      name: "DURAZNO",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "60.000 hab. • Centro geográfico de la República",
+      gov: "C. Vidalín",
+      status: "BASTIÓN BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 31, cr: 62, ind: 7,
+      econ: "Polo ferroviario Ferrocarril Central, Frigoríficos cárnicos",
+      empleo: "61.5%"
+    },
+    lavalleja: {
+      name: "LAVALLEJA",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "59.000 hab. • Sierras y minería de calizas",
+      gov: "M. García",
+      status: "CONTROL BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 32, cr: 60, ind: 8,
+      econ: "Turismo serrano Villa Serrana, Aguas minerales & Cemento",
+      empleo: "58.0%"
+    },
+    treintaytres: {
+      name: "TREINTA Y TRES",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "50.000 hab. • Quebrada de los Cuervos",
+      gov: "M. Sánchez",
+      status: "BASTIÓN BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 30, cr: 63, ind: 7,
+      econ: "Cuenca arrocera del Cebollatí & Ganadería de pastizal",
+      empleo: "57.7%"
+    },
+    cerrolargo: {
+      name: "CERRO LARGO",
+      party: "pn",
+      partyName: "Partido Nacional",
+      partyColor: "#4285F4",
+      partyBadgeText: "#c7eada",
+      meta: "89.000 hab. • Frontera de Melo y Río Branco",
+      gov: "J. Yurramendi",
+      status: "BASTIÓN BLANCO",
+      statusBg: "bg-surface-container-highest",
+      statusColor: "text-secondary-fixed",
+      fa: 29, cr: 65, ind: 6,
+      econ: "Free shops fronterizos, Ganadería de frontera & Arroz",
+      empleo: "56.8%"
+    }
+  };
+
+  let currentSelectedKey = 'canelones';
+  let currentMapMode = 'poder';
+
+  function selectDepartment(key) {
+    if (!DEPARTAMENTOS[key]) return;
+    currentSelectedKey = key;
+    const data = DEPARTAMENTOS[key];
+
+    // Reset all vector outlines
+    Object.keys(DEPARTAMENTOS).forEach(k => {
+      const el = document.getElementById(`dept-${k}`);
+      if (el) {
+        el.setAttribute('stroke', '#0a0f10');
+        el.setAttribute('stroke-width', '1.8');
+      }
+    });
+
+    // Highlight selected vector
+    const selectedEl = document.getElementById(`dept-${key}`);
+    if (selectedEl) {
+      selectedEl.setAttribute('stroke', '#ffb691');
+      selectedEl.setAttribute('stroke-width', '3');
+    }
+
+    // Update HUD & Bottom Sheet
+    document.getElementById('hover-dept-name').innerText = data.name.charAt(0) + data.name.slice(1).toLowerCase();
+    document.getElementById('sheet-dept-name').innerText = data.name;
+    document.getElementById('sheet-dept-meta').innerText = data.meta;
+    document.getElementById('sheet-dept-gov').innerText = data.gov;
+    document.getElementById('sheet-dept-econ').innerText = data.econ;
+    document.getElementById('sheet-dept-empleo').innerText = data.empleo;
+
+    // Badges & Status
+    const badge = document.getElementById('badge-partido');
+    badge.innerText = data.partyName.toUpperCase();
+    badge.style.backgroundColor = `${data.partyColor}26`;
+    badge.style.color = data.partyBadgeText;
+
+    const tag = document.getElementById('sheet-status-tag');
+    tag.innerText = data.status;
+
+    // Voting intent meters
+    document.getElementById('bar-fa').style.width = `${data.fa}%`;
+    document.getElementById('bar-cr').style.width = `${data.cr}%`;
+    document.getElementById('bar-ind').style.width = `${data.ind}%`;
+
+    document.getElementById('val-fa').innerText = `FA: ${data.fa}%`;
+    document.getElementById('val-cr').innerText = `Coalición: ${data.cr}%`;
+    document.getElementById('val-ind').innerText = `Indecisos: ${data.ind}%`;
+  }
+
+  function switchMapMode(mode) {
+    currentMapMode = mode;
+    const modes = ['poder', 'voto', 'inversion', 'empleo'];
+
+    // Update tab pills style
+    modes.forEach(m => {
+      const btn = document.getElementById(`btn-mode-${m}`);
+      if (m === mode) {
+        btn.className = "mode-tab shrink-0 px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold shadow-md flex items-center gap-1.5 transition-all";
+      } else {
+        btn.className = "mode-tab shrink-0 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-all flex items-center gap-1.5";
+      }
+    });
+
+    const labelEl = document.getElementById('map-mode-label');
+
+    // Dynamically restyle vector fills according to tactical layer
+    Object.keys(DEPARTAMENTOS).forEach(k => {
+      const el = document.getElementById(`dept-${k}`);
+      if (!el) return;
+      const dept = DEPARTAMENTOS[k];
+
+      if (mode === 'poder') {
+        labelEl.innerText = "INTENDENCIAS 2025-2030";
+        el.setAttribute('fill', dept.partyColor);
+        el.setAttribute('fill-opacity', k === currentSelectedKey ? '0.98' : '0.88');
+      } else if (mode === 'voto') {
+        labelEl.innerText = "PROYECCIÓN BALOTAJE 2029";
+        // Gradient color scale FA vs Coalición
+        el.setAttribute('fill', dept.fa > dept.cr ? '#D9383A' : '#4285F4');
+        el.setAttribute('fill-opacity', Math.abs(dept.fa - dept.cr) > 15 ? '0.95' : '0.65');
+      } else if (mode === 'inversion') {
+        labelEl.innerText = "INVERSIÓN OBRAS UYU (2029)";
+        const heavyInvest = ['canelones', 'montevideo', 'maldonado', 'durazno', 'tacuarembo'];
+        el.setAttribute('fill', heavyInvest.includes(k) ? '#accebf' : '#313637');
+        el.setAttribute('fill-opacity', '0.9');
+      } else if (mode === 'empleo') {
+        labelEl.innerText = "DESEMPLEO & TENSIÓN LABORAL";
+        const highUnemp = ['salto', 'artigas', 'paysandu', 'rionegro'];
+        el.setAttribute('fill', highUnemp.includes(k) ? '#e87532' : '#262b2c');
+        el.setAttribute('fill-opacity', '0.9');
+      }
+    });
+  }
+
+  function executeAction(type, cost, msg) {
+    const toast = document.getElementById('tactical-toast');
+    const toastMsg = document.getElementById('tactical-toast-msg');
+    toastMsg.innerText = `${msg} en ${DEPARTAMENTOS[currentSelectedKey].name}.`;
+    toast.classList.remove('hidden');
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+      setTimeout(() => toast.classList.add('hidden'), 300);
+    }, 2400);
+  }
+</script><footer class="w-full mt-space-xl mb-space-lg flex flex-col items-center justify-center gap-space-xs"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant/70 tracking-widest uppercase"><a class="hover:text-primary transition-colors" href="https://www.instagram.com/felisilvv/" rel="noopener noreferrer" target="_blank">IG: @felisilvv</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="https://www.instagram.com/silvvdesign/" rel="noopener noreferrer" target="_blank">DISEÑO: @silvvdesign</a></div><span class="font-headline-sm text-[11px] italic text-on-surface-variant/40 tracking-normal">República Oriental del Uruguay • Despacho Presidencial</span></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container bg-surface-container-high/90"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="despacho" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Despacho</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] transition-colors rounded text-primary-container bg-surface-container-high/90" data-path="mapa-de-uruguay" href="#"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-sm text-[10px] tracking-tight truncate">Mapa</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="parlamento" href="#"><span class="material-symbols-outlined text-[20px]">how_to_vote</span><span class="font-label-sm text-[10px] tracking-tight truncate">Parlamento</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="campana-y-balotaje" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-sm text-[10px] tracking-tight truncate">Campaña</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 min-w-[56px] text-on-surface-variant transition-colors rounded hover:text-on-surface" data-path="gabinete-y-economia" href="#"><span class="material-symbols-outlined text-[20px]">balance</span><span class="font-label-sm text-[10px] tracking-tight truncate">Gabinete</span></a></div></nav></body></html>
+
+<!-- Pantalla de Inicio — Edición Videojuego Inmersivo -->
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><title>¿Quién Quiere Gobernar Uruguay?</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#accebf", "inverse-on-surface": "#2c3132", "on-secondary-fixed-variant": "#4b463c", "tertiary-container": "#7b9c8e", "surface-container-high": "#262b2c", "outline": "#a58b80", "on-surface-variant": "#dec1b4", "inverse-primary": "#9e4200", "inverse-surface": "#dfe3e4", "error-container": "#93000a", "secondary-fixed": "#e9e2d4", "tertiary": "#accebf", "surface-container-highest": "#313637", "primary-fixed-dim": "#ffb691", "on-primary": "#552000", "on-tertiary-fixed-variant": "#2e4d41", "surface-variant": "#313637", "on-tertiary": "#17362b", "on-error-container": "#ffdad6", "outline-variant": "#574239", "on-primary-container": "#511e00", "on-secondary": "#343027", "primary": "#ffb691", "surface-bright": "#353a3b", "on-secondary-container": "#bbb4a7", "on-primary-fixed-variant": "#793100", "tertiary-fixed": "#c7eada", "on-primary-fixed": "#341100", "primary-fixed": "#ffdbcb", "on-background": "#dfe3e4", "primary-container": "#e87532", "surface-dim": "#0f1415", "on-tertiary-fixed": "#002117", "on-surface": "#dfe3e4", "background": "#0f1415", "surface-tint": "#ffb691", "surface-container-lowest": "#0a0f10", "surface-container-low": "#171c1d", "surface": "#0f1415", "secondary-container": "#4b463c", "on-tertiary-container": "#133329", "on-secondary-fixed": "#1e1b13", "on-error": "#690005", "error": "#ffb4ab", "secondary-fixed-dim": "#cdc6b8", "surface-container": "#1b2021", "secondary": "#cdc6b8" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "2.5rem" }, fontFamily: { "headline-xl": ["Newsreader"], "label-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-lg": ["Newsreader"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Newsreader"], "headline-xl-mobile": ["Newsreader"], "body-md": ["Inter"], "headline-md": ["Newsreader"], "headline-lg-mobile": ["Newsreader"], "body-sm": ["Inter"], "label-md": ["JetBrains Mono"] }, fontSize: { "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-xl-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }
+  /* Video Game Beveled Tactile Accents */
+  .game-border-gold {
+    box-shadow: inset 0 1px 0 rgba(255, 182, 145, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.8), 0 4px 12px rgba(0,0,0,0.5);
+  }
+  .game-border-amber {
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35), inset 0 -2px 0 rgba(0, 0, 0, 0.6), 0 8px 20px -4px rgba(232, 117, 50, 0.45);
+  }
+  .scanline {
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 1px, transparent 3px);
+  }
+  @keyframes eq1 { 0%, 100% { height: 4px; } 50% { height: 14px; } }
+  @keyframes eq2 { 0%, 100% { height: 12px; } 50% { height: 6px; } }
+  @keyframes eq3 { 0%, 100% { height: 8px; } 50% { height: 16px; } }
+  .eq-bar-1 { animation: eq1 1.2s ease-in-out infinite; }
+  .eq-bar-2 { animation: eq2 0.9s ease-in-out infinite; }
+  .eq-bar-3 { animation: eq3 1.4s ease-in-out infinite; }
+  body {
+    min-height: max(884px, 100dvh);
+  }
+  </style></head><body class="bg-surface-dim font-body-md text-on-surface antialiased pt-safe pb-safe selection:bg-primary-container selection:text-on-primary-container relative"><main class="flex flex-col relative w-full min-h-screen bg-surface-dim overflow-x-hidden"><!-- Floating Canvas Ambient Particles --><canvas class="pointer-events-none absolute inset-0 z-0 opacity-40 mix-blend-screen" id="particle-canvas"></canvas><div class="flex flex-col w-full relative z-10 select-none pb-8">
+<!-- Top Cinematic Gamer HUD Header -->
+<div class="w-full bg-surface-container-lowest/95 border-b border-outline-variant/60 backdrop-blur-md px-3 py-2 flex flex-col gap-1.5 shadow-2xl relative">
+<div class="flex items-center justify-between">
+<!-- Player Tactical Profile -->
+<div class="flex items-center gap-2">
+<div class="relative">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high border border-primary/50 flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+</div>
+<span class="absolute -bottom-1 -right-1 bg-primary-container text-on-primary-container font-label-sm text-[8px] font-bold px-1 rounded-sm border border-black/40">14</span>
+</div>
+<div class="flex flex-col leading-none">
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-[11px] font-bold text-on-surface tracking-wider">ESTADO MAYOR</span>
+<span class="material-symbols-outlined text-tertiary text-xs">verified</span>
+</div>
+<span class="font-label-sm text-[9px] text-primary-fixed-dim uppercase tracking-widest mt-0.5">Rango: Caudillo Emergente • Nivel 14</span>
+</div>
+</div>
+<!-- Audio BSO Visualizer & Controller -->
+<div class="flex items-center gap-2">
+<div class="hidden sm:flex flex-col items-end text-right mr-1">
+<span class="font-label-sm text-[9px] text-secondary tracking-widest uppercase">BANDA SONORA ACTIVA</span>
+<span class="font-label-sm text-[10px] text-tertiary truncate max-w-[150px]">Marcha Presidencial / Candombe</span>
+</div>
+<button class="flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-container-highest border border-outline-variant/70 active:scale-95 transition-all px-2.5 py-1 rounded-md shadow-sm" id="audio-toggle" onclick="toggleAudio()" title="Controlar Música Orquestal">
+<div class="flex items-end gap-0.5 h-3.5 w-3.5 pb-0.5" id="sound-eq">
+<span class="w-0.5 bg-primary rounded-full eq-bar-1 h-3"></span>
+<span class="w-0.5 bg-primary rounded-full eq-bar-2 h-2"></span>
+<span class="w-0.5 bg-primary rounded-full eq-bar-3 h-3.5"></span>
+</div>
+<span class="material-symbols-outlined text-primary text-sm" id="audio-icon">volume_up</span>
+<span class="font-label-sm text-[10px] text-secondary font-semibold" id="audio-label">BSO ON</span>
+</button>
+</div>
+</div>
+<!-- Tactical Sub-ribbon (Game Version & Game Mode Status) -->
+<div class="flex items-center justify-between pt-1 border-t border-outline-variant/30 text-[9px] font-label-sm text-secondary-fixed-dim">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span class="text-primary font-semibold tracking-wider">v1.4.2 'CONSTITUCIÓN &amp; SANGRE'</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary/70">MOTOR: SUZERAIN TACTICS v4</span>
+<span class="bg-surface-container px-1.5 py-0.2 rounded border border-outline-variant/40 text-tertiary">SERVIDOR LATAM-01</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Atmospheric Glows -->
+<div class="absolute top-16 left-1/2 -translate-x-1/2 w-80 h-72 bg-gradient-to-b from-primary-container/20 via-primary/10 to-transparent blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-20 w-64 h-64 bg-tertiary-container/10 blur-3xl pointer-events-none"></div>
+<!-- Hero Monument Backdrop & National Emblem -->
+<div class="relative w-full px-gutter mt-3 flex flex-col items-center">
+<!-- Stylized Sol de Mayo & Legislative Crest -->
+<div class="relative flex items-center justify-center mb-1">
+<div class="w-16 h-16 rounded-full bg-surface-container-low border border-primary/40 flex items-center justify-center relative shadow-2xl">
+<!-- Sun ray ornamental SVG -->
+<svg class="w-14 h-14 text-primary animate-[spin_45s_linear_infinite]" fill="currentColor" viewbox="0 0 100 100">
+<circle class="text-primary-container" cx="50" cy="50" fill="currentColor" r="16"></circle>
+<g stroke="currentColor" stroke-linecap="round" stroke-width="2.5">
+<line x1="50" x2="50" y1="8" y2="24"></line>
+<line x1="50" x2="50" y1="76" y2="92"></line>
+<line x1="8" x2="24" y1="50" y2="50"></line>
+<line x1="76" x2="92" y1="50" y2="50"></line>
+<line x1="20" x2="32" y1="20" y2="32"></line>
+<line x1="68" x2="80" y1="68" y2="80"></line>
+<line x1="20" x2="32" y1="80" y2="68"></line>
+<line x1="68" x2="80" y1="32" y2="20"></line>
+</g>
+</svg>
+<span class="material-symbols-outlined absolute text-on-surface text-xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<!-- Subtle Uruguayan Ribbon -->
+<div class="absolute -bottom-2 flex items-center gap-0.5 bg-surface-container-highest/95 border border-outline-variant/60 px-2 py-0.5 rounded-full shadow-md">
+<span class="w-2.5 h-1 bg-sky-400 rounded-sm"></span>
+<span class="w-2.5 h-1 bg-secondary-fixed rounded-sm"></span>
+<span class="w-2.5 h-1 bg-sky-400 rounded-sm"></span>
+</div>
+</div>
+<!-- Monument Clairobscur Visual Placeholder with Video Game Vignette -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mt-3 shadow-2xl bg-surface-container-low border border-outline-variant/50">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity filter contrast-125 saturate-50" data-alt="Monolithic architectural facade of the Palacio Legislativo of Montevideo, Uruguay at twilight. Dramatic chiaroscuro lighting with deep graphite shadows, warm amber zenith spotlight illuminating the neoclassical pediment, marble columns, solemn political statecraft aesthetic, high contrast editorial Suzerain mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGqxEfgBDkWrPfPBCdlg16UkQxrHyr-d1FV2vuVjclAhC_SkEB8crcqr7vsvKXSHuOsDM9Mx-qy7LNFW5U-ThA043XKnW4ltwcEnkI8tQbN8fSw_GgoIFjHb8ModBUSk7u1SMPmtVT7FljiGNVY2gXGh2LkRB88fImcLMck9q0zdeHuBlokCxH2Af6Q77fp6jgJeUrdsiMlKdhNOUTt4d4doQKkcfb2lAif9D3cEFn"/>
+<div class="scanline absolute inset-0 pointer-events-none opacity-40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/50 to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1.5 bg-surface-container-lowest/90 border border-outline-variant/50 px-2 py-0.5 rounded text-[10px] font-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span> SESIÓN EN VIVO
+      </div>
+<div class="absolute top-2 right-2 flex items-center gap-1 bg-surface-container-lowest/80 border border-outline-variant/40 px-2 py-0.5 rounded text-tertiary">
+<span class="material-symbols-outlined text-xs">verified_user</span>
+<span class="font-label-sm text-label-sm">PODER EJECUTIVO</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[10px] font-label-sm text-secondary">
+<span>MONTEVIDEO D.C. • PALACIO LEGISLATIVO</span>
+<span class="text-primary-fixed-dim">ESTADO DE ASAMBLEA GENERAL</span>
+</div>
+</div>
+<!-- Editorial Typography Title -->
+<div class="text-center mt-3.5 px-2">
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="h-px w-6 bg-primary/40"></span>
+<p class="font-label-md text-label-md tracking-[0.22em] text-primary uppercase font-bold">
+          SIMULADOR POLÍTICO DE ALTA ESTRATEGIA
+        </p>
+<span class="h-px w-6 bg-primary/40"></span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary-fixed drop-shadow-lg leading-tight uppercase font-bold tracking-tight">
+        ¿QUIÉN QUIERE GOBERNAR <span class="text-primary-container drop-shadow-md">URUGUAY</span>?
+      </h1>
+<!-- Solemn Motto Between Guilloche Ornamentation -->
+<div class="flex items-center justify-center gap-2 mt-2 px-3">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
+<p class="font-headline-sm text-headline-sm italic text-secondary-fixed text-center px-1">
+          «El poder se conquista. Gobernar es otra historia»
+        </p>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Political Difficulty Selector Dial (Game Style Switch) -->
+<div class="px-gutter mt-4">
+<div class="bg-surface-container-lowest/90 p-1.5 rounded-xl flex items-center border border-outline-variant/60 shadow-xl">
+<button class="flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold flex items-center justify-center gap-1.5 shadow-md border-t border-white/25 active:scale-95" id="diff-const" onclick="setDifficulty('const')">
+<span class="material-symbols-outlined text-sm">balance</span>
+        Modo Constitucional
+      </button>
+<button class="flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95" id="diff-real" onclick="setDifficulty('real')">
+<span class="material-symbols-outlined text-sm">skull</span>
+        Realpolitik Feroz
+      </button>
+</div>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim text-center mt-1.5 italic" id="diff-desc">
+      Equilibrio estricto de mayorías parlamentarias, interpelaciones senatoriales y pactos de coalición republicana.
+    </p>
+</div>
+<!-- Main Strategic Actions (Video Game Main Menu RPG Style) -->
+<div class="px-gutter mt-4 flex flex-col gap-2.5">
+<!-- Primary CTA: NUEVA PARTIDA -->
+<button class="game-border-amber relative group w-full bg-gradient-to-b from-[#f28240] via-primary-container to-[#c95b1b] hover:brightness-110 active:scale-[0.98] transition-all rounded-xl p-4 overflow-hidden text-left flex items-center justify-between border-t border-white/30 border-b border-black/40">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent pointer-events-none"></div>
+<div class="flex items-center gap-3.5 z-10">
+<div class="w-12 h-12 rounded-lg bg-black/25 border border-white/20 flex items-center justify-center text-on-primary-container shadow-inner">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">how_to_vote</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-container font-bold tracking-wide drop-shadow">NUEVA PARTIDA</span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-200 animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container/90 tracking-wider font-semibold">ASUMIR LA BANDA PRESIDENCIAL</span>
+</div>
+</div>
+<div class="flex items-center gap-1 z-10 text-on-primary-container bg-black/20 px-2 py-1.5 rounded border border-white/15">
+<span class="font-label-sm text-xs font-bold">JUGAR</span>
+<span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">swords</span>
+</div>
+</button>
+<!-- Panel EXPEDIENTE DE PARTIDA ACTIVA / CONTINUAR (Game Save Slot Style) -->
+<div class="w-full bg-surface-container-high/90 border border-outline-variant/80 rounded-xl p-3.5 shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-outline-variant/40">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">folder_open</span>
+<span class="font-label-sm text-[11px] font-bold text-primary tracking-wider uppercase">EXPEDIENTE DE PARTIDA ACTIVA</span>
+</div>
+<div class="flex items-center gap-1 text-[10px] font-label-sm bg-tertiary-container/20 border border-tertiary/40 text-tertiary px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">auto_fix_high</span> AUTOGUARDADO
+        </div>
+</div>
+<div class="flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden border border-outline-variant flex-shrink-0 bg-surface-container-lowest">
+<img alt="Thumbnail" class="w-full h-full object-cover opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrObBo-USgVWKHqQvWLoM470Gq-s48KkxPsCdAptZWzVf742NtZBSiFbLYMBv9w4qG6gtO21rxpbrm2iNPlKRGtTVQmNDVb74VpK5y4mrR8hC9k5lWGKzf0D5f1Q8KiOjbJKo47gEr-kzXZIzuItzthfNZGjgB1acTtR07rl1aAnrTAHAlCicGnCxir2IZuM7a6axxVzneRAHLr06hIAMs8ZnG_JQB9YA3oAKGjVOw"/>
+<span class="absolute bottom-0 inset-x-0 bg-black/80 text-[8px] font-label-sm text-center text-primary-fixed">SLOT #1</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-sm font-bold text-on-surface truncate">MANDATO 2025–2030</span>
+<span class="material-symbols-outlined text-xs text-secondary-fixed">military_tech</span>
+</div>
+<span class="font-label-sm text-[11px] text-secondary">Mes 18 • Dificultad Constitucional</span>
+<!-- RPG Political Health / Stability Gauge -->
+<div class="flex items-center gap-2 mt-1">
+<div class="w-24 h-2 bg-surface-container-lowest rounded-full overflow-hidden border border-outline-variant/50">
+<div class="h-full bg-gradient-to-r from-emerald-500 to-tertiary" style="width: 52%;"></div>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-tertiary">52% ESTABILIDAD</span>
+</div>
+</div>
+</div>
+<button class="bg-primary/10 hover:bg-primary-container hover:text-on-primary-container text-primary border border-primary/40 rounded-lg px-3 py-2 flex flex-col items-center justify-center active:scale-95 transition-all shadow">
+<span class="material-symbols-outlined text-xl">play_arrow</span>
+<span class="font-label-sm text-[9px] font-bold uppercase mt-0.5">CONTINUAR</span>
+</button>
+</div>
+</div>
+<!-- Tertiary CTA: CARGAR PARTIDA -->
+<button class="w-full bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition-all rounded-xl py-3 px-3.5 shadow-md flex items-center justify-between text-left border border-outline-variant/60">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest border border-outline-variant/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">save</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">CARGAR ARCHIVO DE ESTADO</span>
+<span class="font-label-sm text-[10px] text-secondary">ARCHIVADORES DEL SENADO &amp; CLOUD</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-surface-container-low px-2 py-1 rounded border border-outline-variant/40">3 PARTIDAS</span>
+</button>
+</div>
+<!-- Video Game Auxiliary Operational Controls (Tactical Hex Grid look) -->
+<div class="px-gutter grid grid-cols-3 gap-2 mt-3">
+<button class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/40 p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all shadow">
+<span class="material-symbols-outlined text-primary text-xl">history_edu</span>
+<span class="font-label-sm text-[11px] text-on-surface leading-tight font-semibold">CÓDICE PATRIO</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/40 p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all shadow relative">
+<div class="relative">
+<span class="material-symbols-outlined text-tertiary text-xl">workspace_premium</span>
+<span class="absolute -top-1.5 -right-3 bg-primary-container text-on-primary-container font-label-sm text-[8px] px-1 rounded font-bold border border-black/50">14/36</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface leading-tight font-semibold">LOGROS</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container border border-outline-variant/40 p-2.5 rounded-xl flex flex-col items-center justify-center text-center gap-1 active:scale-95 transition-all shadow">
+<span class="material-symbols-outlined text-secondary text-xl">tune</span>
+<span class="font-label-sm text-[11px] text-on-surface leading-tight font-semibold">OPCIONES</span>
+</button>
+</div>
+<!-- Logros Recientes & Códice Gamer Badges Ribbon -->
+<div class="px-gutter mt-3.5">
+<div class="bg-surface-container-lowest/80 border border-outline-variant/50 rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-inner">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">emoji_events</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider">LOGROS DESBLOQUEADOS:</span>
+</div>
+<div class="flex items-center gap-1.5">
+<!-- Badge 1: Golpe de Muñeca (Gold) -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded border border-amber-500/50" title="Golpe de Muñeca">
+<span class="material-symbols-outlined text-amber-400 text-xs">military_tech</span>
+<span class="font-label-sm text-[9px] text-amber-200 font-semibold">Golpe de Muñeca</span>
+</div>
+<!-- Badge 2: Pacto Secreto (Bronze) -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded border border-orange-700/50" title="Pacto Secreto">
+<span class="material-symbols-outlined text-orange-400 text-xs">handshake</span>
+<span class="font-label-sm text-[9px] text-orange-200 font-semibold">Pacto Secreto</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Daily Historical Dilemma Interactive Preview Card (Quest Card) -->
+<div class="px-gutter mt-4">
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-xl relative overflow-hidden border border-outline-variant/60">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">local_library</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">DILEMA HISTÓRICO DEL DÍA</span>
+</div>
+<span class="font-label-sm text-[10px] bg-surface-container-highest px-1.5 py-0.5 rounded text-secondary font-bold">EVENTO AÑO 1904</span>
+</div>
+<div class="flex gap-3 items-start">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0 bg-surface-container-highest border border-outline-variant/40" data-alt="Sepia toned archival photographic tintype of historic peace treaty negotiations in rural Uruguay, vintage cavalry tents, poncho-wearing caudillos and suited diplomats consulting parchment treaties, harsh chiaroscuro sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrObBo-USgVWKHqQvWLoM470Gq-s48KkxPsCdAptZWzVf742NtZBSiFbLYMBv9w4qG6gtO21rxpbrm2iNPlKRGtTVQmNDVb74VpK5y4mrR8hC9k5lWGKzf0D5f1Q8KiOjbJKo47gEr-kzXZIzuItzthfNZGjgB1acTtR07rl1aAnrTAHAlCicGnCxir2IZuM7a6axxVzneRAHLr06hIAMs8ZnG_JQB9YA3oAKGjVOw"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug line-clamp-1 font-semibold">
+            Paz de Aceguá: Pacto de Hermanos
+          </h2>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim line-clamp-2 mt-0.5">
+            ¿Firmarás la concordia electoral con el caudillismo o consolidarás el monopolio fiscal de la capital?
+          </p>
+</div>
+</div>
+<!-- Quick interactive decision preview / Buffs -->
+<div class="mt-3 pt-2.5 flex items-center justify-between bg-surface-container/80 -mx-3.5 -mb-3.5 px-3.5 py-2 border-t border-outline-variant/40">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-xs text-emerald-400">add_moderator</span> +8 Cohesión Departamental
+        </span>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-fixed flex items-center gap-0.5 font-bold tracking-wide active:scale-95 transition-transform">
+          EXPLORAR ARCHIVO <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Official Footer & Creative Credits with HUD Frame -->
+<div class="px-gutter mt-6 flex flex-col items-center justify-center text-center">
+<div class="flex items-center gap-3 font-label-md text-label-md bg-surface-container-lowest/80 px-4 py-1.5 rounded-full border border-outline-variant/50 shadow-sm">
+<a class="text-primary hover:text-primary-fixed underline transition-colors flex items-center gap-1" href="https://www.instagram.com/felisilvv/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs">person</span> IG: @felisilvv
+        </a>
+<span class="text-outline-variant">•</span>
+<a class="text-tertiary hover:text-tertiary-fixed underline transition-colors flex items-center gap-1" href="https://www.instagram.com/silvvdesign/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xs">palette</span> DISEÑO: @silvvdesign
+        </a>
+</div>
+<p class="font-body-sm text-body-sm text-secondary/70 mt-2 max-w-xs">
+      Montevideo, República Oriental del Uruguay. Todos los derechos reservados.
+    </p>
+</div>
+</div>
+<script>
+  // Dynamic Game Audio State
+  let isMuted = false;
+  function toggleAudio() {
+    isMuted = !isMuted;
+    const icon = document.getElementById('audio-icon');
+    const label = document.getElementById('audio-label');
+    const eq = document.getElementById('sound-eq');
+    if (isMuted) {
+      icon.innerText = 'volume_off';
+      icon.classList.remove('text-primary');
+      icon.classList.add('text-secondary');
+      label.innerText = 'BSO MUTE';
+      if (eq) eq.classList.add('opacity-20');
+    } else {
+      icon.innerText = 'volume_up';
+      icon.classList.add('text-primary');
+      icon.classList.remove('text-secondary');
+      label.innerText = 'BSO ON';
+      if (eq) eq.classList.remove('opacity-20');
+    }
+  }
+
+  function setDifficulty(mode) {
+    const btnConst = document.getElementById('diff-const');
+    const btnReal = document.getElementById('diff-real');
+    const desc = document.getElementById('diff-desc');
+
+    if (mode === 'const') {
+      btnConst.className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold flex items-center justify-center gap-1.5 shadow-md border-t border-white/25 active:scale-95';
+      btnReal.className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95';
+      desc.innerText = 'Equilibrio estricto de mayorías parlamentarias, interpelaciones senatoriales y pactos de coalición republicana.';
+    } else {
+      btnReal.className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all bg-error-container text-on-error-container font-bold flex items-center justify-center gap-1.5 shadow-md border-t border-white/20 active:scale-95';
+      btnConst.className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md transition-all text-secondary hover:text-on-surface flex items-center justify-center gap-1.5 hover:bg-surface-container active:scale-95';
+      desc.innerText = 'Huelgas generales, presiones de cámaras agropecuarias, filtraciones mediáticas y crisis cambiaria sin tregua.';
+    }
+  }
+
+  // Atmospheric Video Game Particles Canvas
+  (function initAtmosphericParticles() {
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const count = 38;
+
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 1.8 + 0.5,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: -Math.random() * 0.45 - 0.15,
+        alpha: Math.random() * 0.7 + 0.2,
+        amber: Math.random() > 0.4
+      });
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, width, height);
+      for (let p of particles) {
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.y < 0) {
+          p.y = height + 10;
+          p.x = Math.random() * width;
+        }
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.amber ? `rgba(232, 117, 50, ${p.alpha * 0.6})` : `rgba(255, 230, 200, ${p.alpha * 0.4})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(render);
+    }
+    render();
+  })();
+</script></main></body></html>

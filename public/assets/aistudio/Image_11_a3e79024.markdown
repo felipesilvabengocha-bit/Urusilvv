@@ -1,0 +1,208 @@
+---
+name: El Despacho Republicano
+colors:
+  surface: '#0f1415'
+  surface-dim: '#0f1415'
+  surface-bright: '#353a3b'
+  surface-container-lowest: '#0a0f10'
+  surface-container-low: '#171c1d'
+  surface-container: '#1b2021'
+  surface-container-high: '#262b2c'
+  surface-container-highest: '#313637'
+  on-surface: '#dfe3e4'
+  on-surface-variant: '#dec1b4'
+  inverse-surface: '#dfe3e4'
+  inverse-on-surface: '#2c3132'
+  outline: '#a58b80'
+  outline-variant: '#574239'
+  surface-tint: '#ffb691'
+  primary: '#ffb691'
+  on-primary: '#552000'
+  primary-container: '#e87532'
+  on-primary-container: '#511e00'
+  inverse-primary: '#9e4200'
+  secondary: '#cdc6b8'
+  on-secondary: '#343027'
+  secondary-container: '#4b463c'
+  on-secondary-container: '#bbb4a7'
+  tertiary: '#accebf'
+  on-tertiary: '#17362b'
+  tertiary-container: '#7b9c8e'
+  on-tertiary-container: '#133329'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffdbcb'
+  primary-fixed-dim: '#ffb691'
+  on-primary-fixed: '#341100'
+  on-primary-fixed-variant: '#793100'
+  secondary-fixed: '#e9e2d4'
+  secondary-fixed-dim: '#cdc6b8'
+  on-secondary-fixed: '#1e1b13'
+  on-secondary-fixed-variant: '#4b463c'
+  tertiary-fixed: '#c7eada'
+  tertiary-fixed-dim: '#accebf'
+  on-tertiary-fixed: '#002117'
+  on-tertiary-fixed-variant: '#2e4d41'
+  background: '#0f1415'
+  on-background: '#dfe3e4'
+  surface-variant: '#313637'
+typography:
+  headline-xl:
+    fontFamily: Newsreader
+    fontSize: 40px
+    fontWeight: '600'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Newsreader
+    fontSize: 30px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.015em
+  headline-lg:
+    fontFamily: Newsreader
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Newsreader
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 30px
+  headline-md:
+    fontFamily: Newsreader
+    fontSize: 24px
+    fontWeight: '500'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Newsreader
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 10px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  margin: 1rem
+  gutter-tablet: 1.25rem
+  margin-tablet: 2rem
+  gutter-desktop: 1.5rem
+  margin-desktop: 3rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+The brand personality embodies statecraft, journalistic gravity, and political brinkmanship. Designed for political strategy enthusiasts, history scholars, and narrative gamers, the interface evokes the tension of behind-closed-doors cabinet negotiations, the intellectual weight of parliamentary decrees, and the visceral consequence of executive governance under the motto: *"El poder se conquista. Gobernar es otra historia."*
+
+The visual language fuses **Editorial Journalism** and **Tactile Bureaucracy** with cinematic dark strategy interfaces. It contrasts deep charcoal cartographic War Rooms with archival parchment dossiers, classified memorandums, and parliamentary voting chambers. The mood is dignified, deliberate, and high-stakes—avoiding arcade tropes in favor of presidential seals, departmental cartography, legislative hemicicles, and solemn newsprint aesthetics optimized for one-thumb mobile governance.
+
+## Colors
+The palette balances the deep atmospheric darkness of executive strategy with the archival warmth of executive desks and historic statecraft:
+
+- **Primary (`#E87532`)**: Presidential Amber/Orange. Used for supreme executive actions, active vetoes, critical power decisions, and focal interactive states.
+- **Secondary (`#F3EBDD`)**: Archival Cream / Papyrus. Reserved for ministerial briefs, official gazettes, decrypted telegrams, and high-legibility state documents.
+- **Tertiary (`#557568`)**: Sage Patina. Conveys fiscal surplus, institutional stability, diplomatic treaties, and social calm.
+- **Neutral Deep Charcoal (`#252A2B` base with `#181C1D` core)**: Forms the war-room substrate, tactical command viewports, and systemic backdrop.
+- **Factional Accents**: Applied strictly to party indicators, coalition bars, and parliamentary seats:
+  - *Frente Amplio*: `#2E5B9A` (Azure) / `#C7362E` (Tricolor Red)
+  - *Partido Nacional*: `#4B9CD3` (Patriotic Sky Blue) / `#FFFFFF` (White)
+  - *Partido Colorado*: `#D02B2B` (Batllista Scarlet)
+  - *Cabildo Abierto*: `#606834` (Olive Gold)
+  - *Partido Independiente*: `#734F96` (Civic Violet)
+
+## Typography
+The typographic hierarchy creates a sharp intellectual contrast between the moral weight of governance and ruthless data analytics:
+
+- **Headlines (Newsreader)**: Evokes the solemn weight of the Diario Oficial, historic constitution texts, and breaking editorial headlines. Used for bill titles, national crises, newspaper leads, and presidential decrees.
+- **Body (Inter)**: Clean, neutral, high-legibility interface typography engineered for dense legal summaries, constituent briefings, and ministerial dialogues on mobile screens.
+- **Labels & Tactical Telemetry (JetBrains Mono)**: Represents national budgets, macro-indicators (inflation, approval ratings, treasury reserves), parliamentary seat counts, and encrypted intelligence timestamps.
+
+## Layout & Spacing
+The layout adheres to a 4-column fluid system on mobile screens that broadens to 8 columns on tablets and 12 columns on desktop command dashboards.
+
+- **Mobile First Ergonomics**: All actionable buttons, legislative decrees, and emergency response selections stay anchored inside the bottom 40% of the viewport for comfortable one-handed thumb interaction. Top viewports house the national ledger bar (Treasury, Public Approval, Coalition Cohesion, International Confidence).
+- **Responsive Adaptations**:
+  - **Phone (<640px)**: Single-column modal dossiers overlaying full-screen cartographic views. Dossiers slide up from the bottom sheet.
+  - **Tablet (641px–1024px)**: Dual pane; interactive 19-department map on the left, executive desk and voting hemicicle on the right.
+  - **Desktop (>1024px)**: Full ministerial War Room with persistent live senate hemicicle, macro-economic graphs, and classified drawer.
+
+## Elevation & Depth
+Elevation is realized through archival layering and tonal hierarchy rather than artificial drop shadows:
+
+- **Base Layer (Level 0 - Tactical Deep `#181C1D`)**: Vector department borders of Uruguay, hydrographic basins, road grids, and regional tension indicators.
+- **Surface Layer (Level 1 - Executive Slate `#252A2B`)**: Fixed structural UI, navigation docks, and ministerial metrics boards framed with subtle 1px low-contrast brass borders (`rgba(232, 117, 50, 0.15)`).
+- **Raised Dossier Layer (Level 2 - Editorial Parchment `#F3EBDD`)**: Critical dilemma cards, presidential decrees, and urgent press clippings. These cast a diffused, tinted ambient silhouette (`rgba(0, 0, 0, 0.45)` with 24px blur) creating physical presence over the map.
+- **Top Tier (Level 3 - State Seal & Overlays)**: Emergency sessions, constitutional vetoes, and irreversible choice modals framed in deep obsidian with glowing amber accents.
+
+## Shapes
+A structured, geometric shape language reflecting bureaucratic formality:
+- Base elements (buttons, ledger cards, data cells) use a strict `0.25rem` (4px) soft corner radius, retaining the rigid feel of paper stock, stamp plates, and governmental filing systems.
+- Archival dossier cards use `0.5rem` (`rounded-lg`) to emulate bound legal folders.
+- Hemicicle seat nodes and round ministerial status badges are circular pills, creating distinct tactical contrast against geometric text blocks.
+
+## Components
+
+### Buttons & Presidential Directives
+- **Primary Executive Action**: Deep `#E87532` background with `#181C1D` bold text, a sharp 1px `#F3EBDD` hairline inner border, and crisp typography. Emits an amber rim glow on active touch.
+- **Secondary Veto / Dismiss**: `#252A2B` background with 1px border of `#557568` or parchment tone.
+- **Irreversible Decree**: High-contrast black cardstock accented with dual-line guilloche patterning and national seal watermarks.
+
+### Dilemma & Dossier Cards
+- Constructed with `#F3EBDD` papyrus background and `#181C1D` text. Features a distressed editorial headline in *Newsreader*, accompanied by an archival ministerial seal stamp, leak classification tags (`CONFIDENCIAL`, `URGENTE`), and clear ideological/fiscal impact projections displayed in *JetBrains Mono*.
+
+### Parliamentary Hemicicle
+- An interactive radial arc mapping 99 Representatives and 30 Senators. Seats are micro-orbs colored dynamically according to the five political parties. Tapping a coalition party filters their voting disposition, party discipline index, and current loyalty score.
+
+### Departmental Map Nodes (19 Departamentos)
+- Vectorized polygons styled in deep monochrome slate (`#252A2B`). Hovering or tapping activates border glows in `#E87532`, unfolding regional unrest, electoral polling, and infrastructure status.
+
+### Metric Gauges & Status Strips
+- Telemetry modules featuring razor-thin progress tracks (`2px`), mono-spaced readouts, and sage green (`#557568`) trends for positive stability or scarlet batllista for rising inflation/strike risks.
+
+### Newspaper Alerts
+- Breaking press clippings with traditional multi-column serif layout, halftone printed photography filters, drop caps, and journalistic cynicism reacting directly to player enactments.
