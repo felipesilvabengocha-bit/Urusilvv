@@ -18,6 +18,7 @@ PowerShell execution policy blocks `npm.ps1`; use `npm.cmd`.
 - `src/components/views/*` — read-only React views dispatch typed actions.
 - `src/data/*` — calibration, scenarios, policy catalog (~87 policies A–J).
 - Persistencia: `localStorage` key `qqgu_saves_v2`; codes `QQGUY1/2/3:`; backup `qqgu_saves_backup_pre_v3`. `normalizeGameState` → `migrateGameState` (v1→v2→v3).
+- Server (`server.ts`): Express + WebSocket (`/ws`) salas multijugador (máx. 8, inicio solo host); endpoints `/api/health` y `/api/policies/chat` (Gemini, requiere `GEMINI_API_KEY`).
 
 ## Conventions / gotchas
 - `@/*` alias maps to repo root (`.`), not `src/`.
@@ -28,3 +29,4 @@ PowerShell execution policy blocks `npm.ps1`; use `npm.cmd`.
 - Budget allocations are independent (no auto-rebalance to 100%); never re-add rebalancing.
 - Policies with `proyecto_ley`/`ley_presupuestal` route to Parliament and must not activate effects until promulgated.
 - Vicepresidente votes ordinarily in Senate (31 members, Art. 94); 3/5 venias calculated over 30 elected senators.
+- Multiplayer rooms are in-memory (`Map` in `server.ts`); lost on server restart.
