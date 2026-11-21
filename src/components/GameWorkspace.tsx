@@ -567,7 +567,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
               <div className="flex min-w-0 items-center gap-2">
                 <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-[#E87532]" />
                 <span className="truncate font-mono-data text-[10px] font-medium uppercase tracking-wider text-[#DEC1B4]">
-                  {MONTH_NAMES[gameState.currentMonth - 1]} {gameState.currentYear} • {stageLabel}
+                  {MONTH_NAMES[gameState.currentMonth - 1]} {gameState.currentYear}
                 </span>
               </div>
 
