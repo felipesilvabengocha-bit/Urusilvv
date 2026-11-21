@@ -1,5 +1,6 @@
 import type {
   AdvisorRole,
+  DepartmentPollState,
   EcosystemActionResult,
   OpinionSegmentId,
   OpinionSegmentState,
@@ -55,7 +56,12 @@ export function ensureEcosystem(
   state: GameState,
   factory: (s: GameState) => PoliticalEcosystemState
 ): PoliticalEcosystemState {
-  return state.expansion ?? factory(state);
+  const eco = state.expansion ?? factory(state);
+  return {
+    ...eco,
+    segmentPolls: eco.segmentPolls ?? [],
+    departmentPolls: eco.departmentPolls ?? [buildDepartmentPoll(state)],
+  };
 }
 
 export function withLog(
@@ -169,6 +175,61 @@ export function buildSegmentPoll(
       return {
         segmentId: segment.id as OpinionSegmentId,
         approval: segment.governmentApproval,
+        playerPartyPct: player?.pct ?? 0,
+        leadingPartyId: leader.partyId,
+      };
+    }),
+  };
+}
+
+export function buildDepartmentPoll(state: GameState): DepartmentPollState {
+  const nationalUnemployment = state.macro.unemploymentPct;
+  const nationalPoverty = state.macro.povertyPct;
+  const playerPartyId = state.player.partyId;
+  const isIntendente = state.player.currentOffice === 'intendente';
+
+  return {
+    dateLabel: `${state.currentMonth}/${String(state.currentYear).slice(2)}`,
+    departments: state.departments.map((department) => {
+      const localMood =
+        (nationalUnemployment - department.unemploymentRate) * 1.8 +
+        (nationalPoverty - department.povertyRate) * 1.1 +
+        (department.localServiceQuality - 50) * 0.18;
+      const approval = r1(clamp(state.macro.governmentApprovalPct + localMood, 5, 95));
+      const weighted = state.parties.map((party) => {
+        const multiplier = department.partyMultipliers[party.id] ?? 1;
+        const ownDepartment =
+          isIntendente &&
+          state.player.targetDepartment === department.id &&
+          party.id === playerPartyId
+            ? 1.18
+            : 1;
+        const territorialMachine =
+          party.id === playerPartyId
+            ? 1 + (state.player.attributes.territorialMachine - 50) * 0.0015
+            : 1;
+        return {
+          partyId: party.id,
+          value:
+            Math.max(0.1, party.currentPollShare) *
+            multiplier *
+            ownDepartment *
+            territorialMachine,
+        };
+      });
+      const total = weighted.reduce((sum, item) => sum + item.value, 0) || 1;
+      const normalized = weighted.map((item) => ({
+        partyId: item.partyId,
+        pct: r1((item.value / total) * 100),
+      }));
+      const player = normalized.find((item) => item.partyId === playerPartyId);
+      const leader = normalized.reduce(
+        (best, current) => (current.pct > best.pct ? current : best),
+        normalized[0] ?? { partyId: playerPartyId, pct: 0 }
+      );
+      return {
+        departmentId: department.id,
+        approval,
         playerPartyPct: player?.pct ?? 0,
         leadingPartyId: leader.partyId,
       };

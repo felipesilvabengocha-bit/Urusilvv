@@ -18,6 +18,7 @@ import type {
 } from '../types/expansion';
 import type { GameState } from '../types/game';
 import {
+  buildDepartmentPoll,
   buildSegmentPoll,
   clamp,
   ideologyAlignment,
@@ -193,6 +194,7 @@ export function createInitialEcosystemState(state: GameState): PoliticalEcosyste
   }));
   const opinionSegments = buildOpinionSegments(state);
   const segmentPoll = buildSegmentPoll(state, opinionSegments);
+  const departmentPoll = buildDepartmentPoll(state);
 
   return {
     version: 1,
@@ -204,6 +206,7 @@ export function createInitialEcosystemState(state: GameState): PoliticalEcosyste
     debates: buildDebates(state),
     opinionSegments,
     segmentPolls: [segmentPoll],
+    departmentPolls: [departmentPoll],
     cabinetCrises: [],
     institutionalControls: [],
     policyEvaluations: [],

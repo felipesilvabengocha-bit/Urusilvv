@@ -19,6 +19,7 @@ import {
   NationalBudgetCategory,
 } from '../types/game';
 import { createInitialEcosystemState } from './ecosystemFactory';
+import { buildDepartmentPoll } from './ecosystemShared';
 
 export const CURRENT_SCHEMA_VERSION = 3;
 export const BACKUP_SAVES_KEY = 'qqgu_saves_backup_pre_v3';
@@ -269,6 +270,15 @@ export function migrateGameState(rawState: GameState): GameState {
 
   return {
     ...migrated,
-    expansion: rawState.expansion ?? createInitialEcosystemState(migrated),
+    expansion: rawState.expansion
+      ? {
+          ...rawState.expansion,
+          segmentPolls: rawState.expansion.segmentPolls ?? [],
+          departmentPolls:
+            rawState.expansion.departmentPolls && rawState.expansion.departmentPolls.length > 0
+              ? rawState.expansion.departmentPolls
+              : [buildDepartmentPoll(migrated)],
+        }
+      : createInitialEcosystemState(migrated),
   };
 }

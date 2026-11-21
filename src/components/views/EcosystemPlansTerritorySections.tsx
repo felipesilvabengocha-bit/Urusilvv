@@ -163,8 +163,9 @@ export const TransparencySection: React.FC<Props> = ({ eco, run }) => {
   );
 };
 
-export const IntendenciesSection: React.FC<Props> = ({ eco, run }) => {
+export const IntendenciesSection: React.FC<Props> = ({ gameState, eco, run }) => {
   const sorted = [...eco.intendencyRelations].sort((a, b) => b.relationScore - a.relationScore);
+  const latestPoll = eco.departmentPolls?.[eco.departmentPolls.length - 1];
   return (
     <EcoCard
       title="Las 19 intendencias"
@@ -172,38 +173,47 @@ export const IntendenciesSection: React.FC<Props> = ({ eco, run }) => {
       icon={<MapPinned className="h-4 w-4 text-[#FFB691]" />}
     >
       <div className="max-h-[360px] space-y-1.5 overflow-y-auto pr-1">
-        {sorted.map((relation) => (
-          <Row key={relation.departmentId}>
-            <div className="flex flex-wrap items-center justify-between gap-1">
-              <span className="text-xs font-bold text-[#DFE3E4]">{relation.departmentName}</span>
-              <Pill tone={relation.relationScore >= 25 ? 'good' : relation.relationScore >= -10 ? 'warn' : 'bad'}>
-                {relation.relationScore > 0 ? '+' : ''}
-                {relation.relationScore.toFixed(0)}
-              </Pill>
-            </div>
-            <div className="mt-1 flex items-center gap-2">
-              <Meter
-                value={(relation.relationScore + 100) / 2}
-                tone={toneFor((relation.relationScore + 100) / 2)}
-              />
-              <span className="shrink-0 text-[10px] text-[#CDC6B8]">Conflicto {relation.conflictLevel.toFixed(0)}</span>
-            </div>
-            <p className="mt-0.5 text-[10px] text-[#CDC6B8]">
-              {relation.intendenteName}
-              {relation.agreement?.active
-                ? ` · convenio ${relation.agreement.monthsRemaining} meses`
-                : ''}
-            </p>
-            <div className="mt-1.5 flex flex-wrap gap-1">
-              <Btn disabled={relation.agreement?.active} onClick={() => run({ type: 'intendency_agreement', departmentId: relation.departmentId })}>
-                Convenio · 4 CP
-              </Btn>
-              <Btn onClick={() => run({ type: 'transfer_to_intendency', departmentId: relation.departmentId, amountMillions: 50 })}>
-                Transferir $50M · 3 CP
-              </Btn>
-            </div>
-          </Row>
-        ))}
+        {sorted.map((relation) => {
+          const poll = latestPoll?.departments.find(
+            (entry) => entry.departmentId === relation.departmentId
+          );
+          const leader = gameState.parties.find((party) => party.id === poll?.leadingPartyId);
+          return (
+            <Row key={relation.departmentId}>
+              <div className="flex flex-wrap items-center justify-between gap-1">
+                <span className="text-xs font-bold text-[#DFE3E4]">{relation.departmentName}</span>
+                <Pill tone={relation.relationScore >= 25 ? 'good' : relation.relationScore >= -10 ? 'warn' : 'bad'}>
+                  {relation.relationScore > 0 ? '+' : ''}
+                  {relation.relationScore.toFixed(0)}
+                </Pill>
+              </div>
+              <div className="mt-1 flex items-center gap-2">
+                <Meter
+                  value={(relation.relationScore + 100) / 2}
+                  tone={toneFor((relation.relationScore + 100) / 2)}
+                />
+                <span className="shrink-0 text-[10px] text-[#CDC6B8]">Conflicto {relation.conflictLevel.toFixed(0)}</span>
+              </div>
+              <p className="mt-0.5 text-[10px] text-[#CDC6B8]">
+                {relation.intendenteName}
+                {poll
+                  ? ` · ${leader?.acronym ?? '—'} lidera · tú ${poll.playerPartyPct.toFixed(0)}%`
+                  : ''}
+                {relation.agreement?.active
+                  ? ` · convenio ${relation.agreement.monthsRemaining} meses`
+                  : ''}
+              </p>
+              <div className="mt-1.5 flex flex-wrap gap-1">
+                <Btn disabled={relation.agreement?.active} onClick={() => run({ type: 'intendency_agreement', departmentId: relation.departmentId })}>
+                  Convenio · 4 CP
+                </Btn>
+                <Btn onClick={() => run({ type: 'transfer_to_intendency', departmentId: relation.departmentId, amountMillions: 50 })}>
+                  Transferir $50M · 3 CP
+                </Btn>
+              </div>
+            </Row>
+          );
+        })}
       </div>
     </EcoCard>
   );

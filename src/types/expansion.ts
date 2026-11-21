@@ -162,6 +162,16 @@ export interface SegmentPollState {
   }>;
 }
 
+export interface DepartmentPollState {
+  dateLabel: string;
+  departments: Array<{
+    departmentId: DepartmentId;
+    approval: number;
+    playerPartyPct: number;
+    leadingPartyId: string;
+  }>;
+}
+
 export type CabinetCrisisKind = 'renuncia' | 'conflicto' | 'error_gestion' | 'escandalo';
 
 export interface CabinetCrisisState {
@@ -335,6 +345,7 @@ export interface PoliticalEcosystemState {
   debates: DebateSessionState[];
   opinionSegments: OpinionSegmentState[];
   segmentPolls: SegmentPollState[];
+  departmentPolls: DepartmentPollState[];
   cabinetCrises: CabinetCrisisState[];
   institutionalControls: InstitutionalControlState[];
   policyEvaluations: PolicyEvaluationState[];

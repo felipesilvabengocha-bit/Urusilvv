@@ -13,6 +13,7 @@ import type { ActivePublicPolicy, GameState, PolicyMacroEffect } from '../types/
 import { getPlayerCapabilities } from './capabilitiesEngine';
 import { createInitialEcosystemState } from './ecosystemFactory';
 import {
+  buildDepartmentPoll,
   buildSegmentPoll,
   clamp,
   ensureEcosystem,
@@ -435,6 +436,16 @@ export function stepMonthlyEcosystem(state: GameState, dateLabel: string): GameS
   popularityDelta += (weightedAffinity - player.attributes.popularity) * 0.015;
   approvalDelta += (weightedApproval - macro.governmentApprovalPct) * 0.012;
 
+  const departmentPoll = buildDepartmentPoll({
+    ...state,
+    macro,
+    politicalIndicators: indicators,
+    player,
+    parties,
+    departments,
+  });
+  const departmentPolls = [...(eco.departmentPolls ?? []), departmentPoll].slice(-12);
+
   /* 8. CRISIS DE GABINETE */
   let cabinetCrises = eco.cabinetCrises.map((c) =>
     c.status === 'abierta' ? { ...c, monthsOpen: c.monthsOpen + 1 } : c
@@ -820,12 +831,23 @@ export function stepMonthlyEcosystem(state: GameState, dateLabel: string): GameS
 
   /* 13. INTENDENCIAS · relación política individual con las 19 */
   let intendencies = eco.intendencyRelations.map((relation) => {
-    const target =
+    const pollEntry = departmentPoll.departments.find(
+      (entry) => entry.departmentId === relation.departmentId
+    );
+    const pollingBonus = pollEntry
+      ? pollEntry.leadingPartyId === state.player.partyId
+        ? 3
+        : pollEntry.playerPartyPct < 15
+        ? -3
+        : 0
+      : 0;
+    const baseTarget =
       relation.partyId === state.nationalPresidentPartyId
         ? 70
         : state.coalitionPartyIds.includes(relation.partyId)
         ? 58
         : 35;
+    const target = clamp(baseTarget + pollingBonus, 20, 85);
     let score = clamp(relation.relationScore + (target - relation.relationScore) * 0.08, -100, 100);
     let agreement = relation.agreement;
     if (agreement?.active) {
@@ -970,6 +992,7 @@ export function stepMonthlyEcosystem(state: GameState, dateLabel: string): GameS
     debates,
     opinionSegments: segments,
     segmentPolls,
+    departmentPolls,
     cabinetCrises,
     institutionalControls: controls,
     policyEvaluations: evaluations,
