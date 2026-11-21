@@ -884,7 +884,7 @@ export const PartySpaceView: React.FC<PartyViewProps> = ({
           Alianzas y relaciones con otros partidos y dirigentes
         </h3>
         <p className="mt-1 text-xs text-[#CDC6B8]">
-          La afinidad determina transferencias en balotaje, acuerdos de coalición y apoyo parlamentario.
+          Afinidad, balotaje y apoyo parlamentario.
         </p>
 
         <div className="mt-4 space-y-2.5">
@@ -960,7 +960,7 @@ export const PartySpaceView: React.FC<PartyViewProps> = ({
           Candidatos y referentes de otros lemas
         </h3>
         <p className="mt-1 text-xs text-[#CDC6B8]">
-          Mejorá la relación o pedí apoyo político por separado a cada candidato/referente, sin formalizar alianza.
+          Relación o apoyo por candidato, sin alianza.
         </p>
         <div className="mt-4 space-y-2.5">
           {gameState.player.relations.map((rel) => {

@@ -555,8 +555,8 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
               </h3>
               <p className="text-xs text-[#CDC6B8]">
                 {caps.canDirectCabinetCouncil
-                  ? 'Convocá el Consejo de Ministros para coordinar carteras, mejorar eficiencia presupuestal y consolidar estabilidad.'
-                  : 'Vista informativa de la conducción ejecutiva nacional. Requiere ejercer la Presidencia de la República.'}
+                  ? 'Consejo de Ministros.'
+                  : 'Requiere Presidencia.'}
               </p>
             </div>
             <button
@@ -709,7 +709,7 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
                 Gobierno Departamental — {targetDept.name}
               </h3>
               <p className="text-xs text-[#CDC6B8]">
-                Intendencia vigente: {targetDept.currentIntendenteName} · Presupuesto: $ {targetDept.annualBudgetMillionsUYU.toLocaleString('es-UY')}M UYU · Servicios: {targetDept.localServiceQuality}/100 · {targetDept.municipalitiesCount} municipios
+                Intendente: {targetDept.currentIntendenteName} · ${targetDept.annualBudgetMillionsUYU.toLocaleString('es-UY')}M · Servicios {targetDept.localServiceQuality}/100
               </p>
             </div>
             <div className="flex flex-wrap gap-2">

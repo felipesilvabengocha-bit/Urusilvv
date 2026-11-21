@@ -268,7 +268,7 @@ export const ResourcesAndActionsView: React.FC<ResourcesAndActionsViewProps> = (
               Recursos y Recompensas por Gestión
             </h2>
             <p className="mt-1 max-w-2xl text-xs text-[#CDC6B8]">
-              La vía principal y sin desgaste para obtener CP y fondos es completar objetivos y misiones. Las maniobras rápidas de abajo tienen costo en popularidad o aprobación ({MAX_RESOURCE_ACTIONS_PER_MONTH}/mes).
+              Objetivos y misiones dan CP sin desgaste. Maniobras rápidas cuestan popularidad ({MAX_RESOURCE_ACTIONS_PER_MONTH}/mes).
             </p>
           </div>
 
