@@ -535,7 +535,7 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
                   Centro Unificado de Políticas Públicas (OPP / MEF + Catálogo Normativo A–J)
                 </div>
                 <p className="mt-0.5 text-[#CDC6B8]">
-                  Diseñá medidas a medida con el equipo técnico OPP/MEF y monitoreá su impacto estimado vs. observado en tiempo real. Toda política con rango de Ley se remite automáticamente al Parlamento.
+                  Diseñá medidas con OPP/MEF. Las que requieren ley van al Parlamento.
                 </p>
               </div>
             </div>
