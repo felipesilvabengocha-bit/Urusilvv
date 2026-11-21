@@ -343,8 +343,13 @@ export function processAIGovernmentTurn(
 
     const chosen = pool[Math.floor(rng() * pool.length)];
     if (chosen) {
+      // IA Reactiva de Oposición: Generación automática de presión mediática y críticas públicas
+      const oppParties = state.parties.filter((p) => p.id !== state.nationalPresidentPartyId && !state.coalitionPartyIds.includes(p.id));
+      const critParty = oppParties[Math.floor(rng() * oppParties.length)] ?? govParty;
+
       oppList.unshift({
         ...chosen,
+        title: `${critParty.name}: ${chosen.title}`,
         id: `opp_${state.currentYear}_${state.currentMonth}_${Math.floor(rng() * 999)}`,
         dateLabel,
         capitalized: false,

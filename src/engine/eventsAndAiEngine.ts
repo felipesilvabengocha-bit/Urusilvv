@@ -257,6 +257,57 @@ export function maybeGenerateContextualEvent(
     });
   }
 
+  candidates.push({
+    id: `evt_agro_${state.currentYear}_${state.currentMonth}`,
+    domain: 'economia',
+    title: 'Crisis hídrica y reclamo de la Asociación Rural del Uruguay (ARU)',
+    description: 'Gremios agropecuarios exigen líneas de crédito blando y rebaja de tarifas energéticas por déficit hídrico prolongado.',
+    context: 'El sector agroexportador es motor clave de divisas y empleo en el litoral e interior.',
+    dateLabel,
+    resolved: false,
+    options: [
+      {
+        id: 'opt_subsidio_agro',
+        label: 'Otorgar subsidio de emergencia y diferir aportes patronales',
+        description: 'Alivia al productor rural pero afecta ingresos fiscales de corto plazo.',
+        moneyCostUYU: 1200000,
+        politicalCapitalCost: 5,
+        successProbability: 82,
+        expectedImpactSummary: '+8 confianza empresarial, +0.3% PIB, -0.4% fiscal.',
+        onSuccess: {
+          businessTrust: 8,
+          gdpDelta: 0.3,
+          deficitDelta: -0.4,
+          approval: 3,
+          note: 'La ARU valoró el respaldo estatal en momentos críticos de producción.',
+        },
+        onFailure: {
+          deficitDelta: -0.2,
+          approval: -2,
+          note: 'El costo fiscal generó reparos en el equipo económico.',
+        },
+      },
+      {
+        id: 'opt_fideicomiso',
+        label: 'Crear fondo de garantía cofinanciado con banca privada',
+        description: 'Mecanismo de mercado sin impacto directo en el gasto público central.',
+        moneyCostUYU: 250000,
+        politicalCapitalCost: 7,
+        successProbability: 68,
+        expectedImpactSummary: '+5 confianza empresarial, +5 capital político.',
+        onSuccess: {
+          businessTrust: 5,
+          approval: 2,
+          note: 'El sistema financiero estructuró con éxito el fondo de auxilio.',
+        },
+        onFailure: {
+          businessTrust: -3,
+          note: 'Los requisitos bancarios fueron considerados demasiado estrictos.',
+        },
+      },
+    ],
+  });
+
   if (m.fiscalDeficitPctGdp > 3.6 || m.countryRiskBps > 125) {
     candidates.push({
       id: `evt_fiscal_${state.currentYear}_${state.currentMonth}`,
@@ -420,7 +471,61 @@ export function maybeGenerateContextualEvent(
     });
   }
 
-  // Evento regional/internacional siempre disponible según contexto Mercosur
+  // Evento FMI / Organismos Multilaterales si el déficit o riesgo país se elevan
+  if (m.fiscalDeficitPctGdp > 4.2 || m.countryRiskBps > 150) {
+    candidates.push({
+      id: `evt_fmi_${state.currentYear}_${state.currentMonth}`,
+      domain: 'economia',
+      title: 'Misión de revisión técnica y advertencia de organismos multilaterales (FMI / Banco Mundial)',
+      description: 'Expertos financieros internacionales señalan vulnerabilidades en la sostenibilidad fiscal y recomiendan reformas estructurales en seguridad social y gasto.',
+      context: `Déficit fiscal en ${m.fiscalDeficitPctGdp.toFixed(1)}% y riesgo país en ${m.countryRiskBps} pb.`,
+      dateLabel,
+      resolved: false,
+      options: [
+        {
+          id: 'opt_carta_intencion',
+          label: 'Firmar carta de intención y plan de metas fiscales plurianuales',
+          description: 'Asegura financiamiento barato y baja el riesgo país a cambio de rigurosidad fiscal.',
+          moneyCostUYU: 0,
+          politicalCapitalCost: 10,
+          successProbability: 80,
+          expectedImpactSummary: '-25 pb riesgo país, +6 confianza empresarial, -6 confianza sindical.',
+          onSuccess: {
+            riskDelta: -25,
+            businessTrust: 6,
+            unionTrust: -6,
+            deficitDelta: -0.6,
+            note: 'Los mercados financieros respaldaron el compromiso de disciplina fiscal.',
+          },
+          onFailure: {
+            coalitionStability: -6,
+            approval: -4,
+            note: 'Las exigencias técnicas generaron debate interno sobre soberanía económica.',
+          },
+        },
+        {
+          id: 'opt_soberania_fiscal',
+          label: 'Rechazar injerencia externa y fondear con emisión soberana local',
+          description: 'Preserva independencia política pero encarece el costo de endeudamiento.',
+          moneyCostUYU: 800000,
+          politicalCapitalCost: 7,
+          successProbability: 55,
+          expectedImpactSummary: '+5 confianza sindical, +10 risk país si fracasa.',
+          onSuccess: {
+            unionTrust: 5,
+            popularity: 2,
+            note: 'La defensa de la autonomía fiscal fue aplaudida por bases sociales.',
+          },
+          onFailure: {
+            riskDelta: 18,
+            businessTrust: -8,
+            deficitDelta: 0.3,
+            note: 'Las calificadoras penalizaron la decisión encareciendo los bonos uruguayos.',
+          },
+        },
+      ],
+    });
+  }
   candidates.push({
     id: `evt_mercosur_${state.currentYear}_${state.currentMonth}`,
     domain: 'internacional',

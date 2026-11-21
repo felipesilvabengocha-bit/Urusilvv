@@ -92,6 +92,30 @@ class AmbientAudioManager {
     this.isPlaying = false;
   }
 
+  public playClick(): void {
+    if (!this.ctx) return;
+    try {
+      const now = this.ctx.currentTime;
+      const osc = this.ctx.createOscillator();
+      const gain = this.ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(320, now);
+      osc.frequency.exponentialRampToValueAtTime(120, now + 0.04);
+      gain.gain.setValueAtTime(0.015, now);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.04);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.05);
+
+      if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+        navigator.vibrate(15);
+      }
+    } catch {
+      // ignore
+    }
+  }
+
   public playChime(type: 'xp' | 'achievement' = 'xp'): void {
     if (!this.isPlaying || !this.ctx) return;
     try {

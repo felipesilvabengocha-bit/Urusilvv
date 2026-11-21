@@ -1,3 +1,6 @@
+import { motion, AnimatePresence } from 'framer-motion';
+import { iosFadeSlideIn, iosSheetModal } from '../utils/iosSprings';
+import { applePageTransition } from '../utils/appleSprings';
 import React, { useEffect, useState } from 'react';
 import {
   AlertTriangle,
@@ -36,6 +39,8 @@ import { syncProgression } from '../engine/progressionEngine';
 import { advanceOneMonth, startNextCareerCycle } from '../engine/simulationEngine';
 import { encodeGameToCode, saveGame } from '../engine/storageEngine';
 import { DepartmentId, GameState, OfficeId } from '../types/game';
+import { DynamicIsland } from './DynamicIsland';
+import { Toast } from './Toast';
 import { CreditsFooter } from './CreditsFooter';
 import { NarrativeMomentModal } from './NarrativeMomentModal';
 import { TermEndModal } from './TermEndModal';
@@ -711,174 +716,173 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
         </header>
 
         <main className="flex-1 overflow-y-auto overscroll-contain">
-          <div className="mx-auto w-full max-w-6xl space-y-4 p-3.5 pb-6 sm:p-6">
-          {isMultiplayer && mpRoom && (
-            <div className="rounded-xl border border-[#ACCEBF]/45 bg-[#171C1D] px-3.5 py-2.5 text-xs">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <Globe2 className="h-4 w-4 text-[#ACCEBF]" />
-                  <span className="font-mono-data font-bold text-[#ACCEBF]">
-                    SALA ONLINE {mpRoom.code}
-                  </span>
-                  <span className="text-[#CDC6B8]">
-                    · {mpRoom.players.filter((p) => p.connected).length} conectados
-                  </span>
-                </div>
-                <button
-                  onClick={() => setMpChatOpen((v) => !v)}
-                  className="rounded border border-[#574239]/60 bg-[#262B2C] px-2.5 py-1 font-mono-data text-[11px] font-semibold text-[#FFB691] hover:border-[#E87532]"
-                >
-                  {mpChatOpen ? 'Ocultar chat' : `Chat sala (${mpRoom.chat.length})`}
-                </button>
-              </div>
-              {mpChatOpen && (
-                <div className="mt-2.5 space-y-2 border-t border-[#574239]/35 pt-2.5">
-                  <div className="max-h-32 space-y-1 overflow-y-auto rounded-lg bg-[#0A0F10] p-2 text-[11px]">
-                    {mpRoom.chat.slice(-12).map((c) => (
-                      <div key={c.id}>
-                        <span className="font-mono-data font-bold text-[#FFB691]">[{c.partyAcronym}] {c.senderName}: </span>
-                        <span className="text-[#DFE3E4]">{c.text}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex gap-1.5">
-                    <input
-                      value={mpChatInput}
-                      onChange={(e) => setMpChatInput(e.target.value)}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' && mpChatInput.trim()) {
-                          multiplayerClient.send({ type: 'room:chat', text: mpChatInput });
-                          setMpChatInput('');
-                        }
-                      }}
-                      placeholder="Mensaje a la sala..."
-                      className="flex-1 rounded-lg border border-[#574239]/60 bg-[#0A0F10] px-2.5 py-1.5 text-xs text-[#DFE3E4]"
-                    />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={effectiveTab}
+              {...applePageTransition}
+              className="mx-auto w-full max-w-6xl space-y-4 p-3.5 pb-6 sm:p-6"
+            >
+              {isMultiplayer && mpRoom && (
+                <div className="rounded-xl border border-[#ACCEBF]/45 bg-[#171C1D] px-3.5 py-2.5 text-xs">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center gap-2">
+                      <Globe2 className="h-4 w-4 text-[#ACCEBF]" />
+                      <span className="font-mono-data font-bold text-[#ACCEBF]">
+                        SALA ONLINE {mpRoom.code}
+                      </span>
+                      <span className="text-[#CDC6B8]">
+                        · {mpRoom.players.filter((p) => p.connected).length} conectados
+                      </span>
+                    </div>
                     <button
-                      onClick={() => {
-                        if (!mpChatInput.trim()) return;
-                        multiplayerClient.send({ type: 'room:chat', text: mpChatInput });
-                        setMpChatInput('');
-                      }}
-                      className="rounded-lg bg-[#E87532] px-3 py-1.5 text-xs font-bold text-[#511E00]"
+                      onClick={() => setMpChatOpen((v) => !v)}
+                      className="rounded border border-[#574239]/60 bg-[#262B2C] px-2.5 py-1 font-mono-data text-[11px] font-semibold text-[#FFB691] hover:border-[#E87532]"
                     >
-                      <Send className="h-3.5 w-3.5" />
+                      {mpChatOpen ? 'Ocultar chat' : `Chat sala (${mpRoom.chat.length})`}
                     </button>
                   </div>
+                  {mpChatOpen && (
+                    <div className="mt-2.5 space-y-2 border-t border-[#574239]/35 pt-2.5">
+                      <div className="max-h-32 space-y-1 overflow-y-auto rounded-lg bg-[#0A0F10] p-2 text-[11px]">
+                        {mpRoom.chat.slice(-12).map((c) => (
+                          <div key={c.id}>
+                            <span className="font-mono-data font-bold text-[#FFB691]">[{c.partyAcronym}] {c.senderName}: </span>
+                            <span className="text-[#DFE3E4]">{c.text}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex gap-1.5">
+                        <input
+                          value={mpChatInput}
+                          onChange={(e) => setMpChatInput(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' && mpChatInput.trim()) {
+                              multiplayerClient.send({ type: 'room:chat', text: mpChatInput });
+                              setMpChatInput('');
+                            }
+                          }}
+                          placeholder="Mensaje a la sala..."
+                          className="flex-1 rounded-lg border border-[#574239]/60 bg-[#0A0F10] px-2.5 py-1.5 text-xs text-[#DFE3E4]"
+                        />
+                        <button
+                          onClick={() => {
+                            if (!mpChatInput.trim()) return;
+                            multiplayerClient.send({ type: 'room:chat', text: mpChatInput });
+                            setMpChatInput('');
+                          }}
+                          className="rounded-lg bg-[#E87532] px-3 py-1.5 text-xs font-bold text-[#511E00]"
+                        >
+                          <Send className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
-            </div>
-          )}
 
-          {toastMsg && (
-            <div className="flex items-center justify-between gap-3 rounded-xl border border-[#E87532]/65 bg-[#1B2021] px-4 py-2.5 text-xs font-semibold text-[#DFE3E4] shadow-lg">
-              <span>{toastMsg}</span>
-              <button
-                onClick={() => setToastMsg(null)}
-                className="inline-flex h-7 w-7 items-center justify-center rounded text-[#CDC6B8] hover:bg-[#262B2C] hover:text-white"
-                aria-label="Cerrar aviso"
-              >
-                <X className="h-4 w-4" />
-              </button>
-            </div>
-          )}
-
-
-          {effectiveTab === 'pais' && (
-            <NationalSummaryView
-              gameState={gameState}
-              onUpdateState={(next) => commitState(next)}
-              onNavigateTab={(tab) => selectWorkspaceTab(tab)}
-            />
-          )}
-          {effectiveTab === 'territorio' && (
-            <UruguayMap gameState={gameState} onVisitDepartment={handleVisitDepartment} />
-          )}
-          {effectiveTab === 'ecosistema' && (
-            <EcosystemView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-          )}
-          {effectiveTab === 'partido' && (
-            <PartySpaceView
-              gameState={gameState}
-              onNegotiateWithParty={handleNegotiateParty}
-              onRequestSupport={handleRequestSupport}
-              onRequestElectoralSupport={handleRequestElectoralSupport}
-              onUpdateState={(next) => commitState(next)}
-            />
-          )}
-          {effectiveTab === 'campana' && (
-            <CampaignAndElectionsView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-          )}
-          {effectiveTab === 'recursos' && (
-            <ResourcesAndActionsView
-              gameState={gameState}
-              onUpdateState={(next) => commitState(next)}
-              onOpenCareer={() => selectWorkspaceTab('carrera')}
-            />
-          )}
-          {effectiveTab === 'gobierno' && (
-            <GovernmentAndCabinetView
-              gameState={gameState}
-              onUpdateState={(next) => commitState(next)}
-              sectionMode="all"
-              activeSection={govSection}
-              onSelectSection={setGovSection}
-            />
-          )}
-          {effectiveTab === 'parlamento' && (
-            <ParliamentView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-          )}
-          {effectiveTab === 'economia' && (
-            <EconomyAndBudgetView
-              gameState={gameState}
-              onUpdateState={(next) => commitState(next)}
-              onOpenPolicyLab={() => selectWorkspaceTab('politicas')}
-            />
-          )}
-          {effectiveTab === 'diplomacia' && (
-            <DiplomacyView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-          )}
-          {effectiveTab === 'oposicion' && (
-            <OppositionView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-          )}
-          {activeTab === 'acontecimientos' && (
-            <div className="space-y-4">
-              <div className="flex flex-wrap items-center gap-2 border-b border-[#574239]/35 pb-2">
-                <button
-                  onClick={() => setEventsSubTab('eventos')}
-                  className={`min-h-[40px] rounded-full px-3.5 py-1.5 font-mono-data text-xs font-bold transition ${
-                    eventsSubTab === 'eventos'
-                      ? 'bg-[#E87532] text-[#511E00]'
-                      : 'bg-[#262B2C] text-[#DEC1B4]'
-                  }`}
-                >
-                  Acontecimientos y Operación ({unresolvedEvents})
-                </button>
-                <button
-                  onClick={() => setEventsSubTab('archivo')}
-                  className={`min-h-[40px] rounded-full px-3.5 py-1.5 font-mono-data text-xs font-bold transition ${
-                    eventsSubTab === 'archivo'
-                      ? 'bg-[#E87532] text-[#511E00]'
-                      : 'bg-[#262B2C] text-[#DEC1B4]'
-                  }`}
-                >
-                  Registro Histórico ({gameState.history.length})
-                </button>
-              </div>
-              {eventsSubTab === 'eventos' ? (
-                <EventsAndOpsView gameState={gameState} onUpdateState={(next) => commitState(next)} />
-              ) : (
-                <HistoricalLogView gameState={gameState} />
+              {toastMsg && (
+                <DynamicIsland 
+                  message={toastMsg} 
+                  type={toastMsg.includes('Logro') || toastMsg.includes('cumplido') ? 'success' : toastMsg.includes('Crisis') ? 'crisis' : 'info'} 
+                  onClose={() => setToastMsg(null)} 
+                />
               )}
-            </div>
-          )}
-          {activeTab === 'carrera' && <CareerProgressionView gameState={gameState} />}
 
+              {effectiveTab === 'pais' && (
+                <NationalSummaryView
+                  gameState={gameState}
+                  onUpdateState={(next) => commitState(next)}
+                  onNavigateTab={(tab) => selectWorkspaceTab(tab)}
+                />
+              )}
+              {effectiveTab === 'territorio' && (
+                <UruguayMap gameState={gameState} onVisitDepartment={handleVisitDepartment} />
+              )}
+              {effectiveTab === 'ecosistema' && (
+                <EcosystemView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+              )}
+              {effectiveTab === 'partido' && (
+                <PartySpaceView
+                  gameState={gameState}
+                  onNegotiateWithParty={handleNegotiateParty}
+                  onRequestSupport={handleRequestSupport}
+                  onRequestElectoralSupport={handleRequestElectoralSupport}
+                  onUpdateState={(next) => commitState(next)}
+                />
+              )}
+              {effectiveTab === 'campana' && (
+                <CampaignAndElectionsView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+              )}
+              {effectiveTab === 'recursos' && (
+                <ResourcesAndActionsView
+                  gameState={gameState}
+                  onUpdateState={(next) => commitState(next)}
+                  onOpenCareer={() => selectWorkspaceTab('carrera')}
+                />
+              )}
+              {effectiveTab === 'gobierno' && (
+                <GovernmentAndCabinetView
+                  gameState={gameState}
+                  onUpdateState={(next) => commitState(next)}
+                  sectionMode="all"
+                  activeSection={govSection}
+                  onSelectSection={setGovSection}
+                />
+              )}
+              {effectiveTab === 'parlamento' && (
+                <ParliamentView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+              )}
+              {effectiveTab === 'economia' && (
+                <EconomyAndBudgetView
+                  gameState={gameState}
+                  onUpdateState={(next) => commitState(next)}
+                  onOpenPolicyLab={() => selectWorkspaceTab('politicas')}
+                />
+              )}
+              {effectiveTab === 'diplomacia' && (
+                <DiplomacyView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+              )}
+              {effectiveTab === 'oposicion' && (
+                <OppositionView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+              )}
+              {activeTab === 'acontecimientos' && (
+                <div className="space-y-4">
+                  <div className="flex flex-wrap items-center gap-2 border-b border-[#574239]/35 pb-2">
+                    <button
+                      onClick={() => setEventsSubTab('eventos')}
+                      className={`min-h-[40px] rounded-full px-3.5 py-1.5 font-mono-data text-xs font-bold transition ${
+                        eventsSubTab === 'eventos'
+                          ? 'bg-[#E87532] text-[#511E00]'
+                          : 'bg-[#262B2C] text-[#DEC1B4]'
+                      }`}
+                    >
+                      Acontecimientos y Operación ({unresolvedEvents})
+                    </button>
+                    <button
+                      onClick={() => setEventsSubTab('archivo')}
+                      className={`min-h-[40px] rounded-full px-3.5 py-1.5 font-mono-data text-xs font-bold transition ${
+                        eventsSubTab === 'archivo'
+                          ? 'bg-[#E87532] text-[#511E00]'
+                          : 'bg-[#262B2C] text-[#DEC1B4]'
+                      }`}
+                    >
+                      Registro Histórico ({gameState.history.length})
+                    </button>
+                  </div>
+                  {eventsSubTab === 'eventos' ? (
+                    <EventsAndOpsView gameState={gameState} onUpdateState={(next) => commitState(next)} />
+                  ) : (
+                    <HistoricalLogView gameState={gameState} />
+                  )}
+                </div>
+              )}
+              {activeTab === 'carrera' && <CareerProgressionView gameState={gameState} />}
 
-          <div className="pt-2 lg:hidden">
-            <CreditsFooter variant="dark" compact />
-          </div>
-          </div>
+              <div className="pt-2 lg:hidden">
+                <CreditsFooter variant="dark" compact />
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </main>
 
         <div className="hidden shrink-0 lg:block">
@@ -888,9 +892,12 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
 
       {/* Sheet de 14 Áreas para iPhone */}
       {mobileSheetOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col justify-end bg-[#0A0F10]/85 backdrop-blur-xs lg:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col justify-end bg-[#0A0F10]/85 backdrop-blur-md lg:hidden">
           <div className="flex-1" onClick={() => setMobileSheetOpen(false)} />
-          <div className="animate-editorial-in safe-bottom max-h-[84dvh] w-full overflow-y-auto rounded-t-2xl border-t-2 border-[#E87532]/50 bg-[#171C1D] p-4 text-[#DFE3E4] shadow-2xl">
+          <motion.div 
+            {...iosSheetModal}
+            className="safe-bottom max-h-[84dvh] w-full overflow-y-auto rounded-t-3xl border-t border-[#E87532]/40 bg-[#171C1D]/95 p-5 text-[#DFE3E4] shadow-2xl backdrop-blur-xl"
+          >
             <div className="mb-3 flex justify-center">
               <span className="h-1 w-10 rounded-full bg-[#CDC6B8]/30" />
             </div>
@@ -994,7 +1001,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
                 Inicio
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       )}
 
