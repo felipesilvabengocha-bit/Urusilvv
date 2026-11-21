@@ -476,7 +476,7 @@ export const CampaignAndElectionsView: React.FC<CampaignViewProps> = ({
         <div className="p-5">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <span className="text-[#CDC6B8]">
-              Situación actual: <strong className="text-[#DFE3E4]">{caps.roleSummaryLabel}</strong> · Postulación:{' '}
+               <strong className="text-[#DFE3E4]">{caps.roleSummaryLabel}</strong> · Postulación:{' '}
               <strong className="text-[#FFB691]">{caps.targetOfficeTitle}</strong>
             </span>
             <span className="font-mono-data font-semibold text-[#ACCEBF]">
@@ -681,7 +681,7 @@ export const CampaignAndElectionsView: React.FC<CampaignViewProps> = ({
           <div>
             <h3 className="font-display text-lg font-bold text-[#DFE3E4]">Calendario Electoral Constitucional</h3>
             <p className="mt-0.5 text-xs text-[#CDC6B8]">
-              Cada instancia electoral se desbloquea únicamente al llegar a su mes constitucional. Avanzá mes a mes mientras construís campaña.
+              Instancias por mes constitucional.
             </p>
           </div>
           <span className="inline-flex items-center gap-1.5 font-mono-data text-xs font-bold text-[#FFB691]">
