@@ -48,6 +48,7 @@ import {
   HistoricalLogView,
 } from './views/DiplomacyEventsAndLogView';
 import { EconomyAndBudgetView } from './views/EconomyAndBudgetView';
+import { EcosystemView } from './views/EcosystemView';
 import { GovernmentAndCabinetView, GovSectionId } from './views/GovernmentAndCabinetView';
 import { OppositionView } from './views/OppositionView';
 import { ParliamentView } from './views/ParliamentView';
@@ -63,6 +64,7 @@ interface GameWorkspaceProps {
 
 type NavTab =
   | 'pais'
+  | 'ecosistema'
   | 'territorio'
   | 'partido'
   | 'campana'
@@ -89,6 +91,7 @@ const NAV_GROUPS: Array<{ title: string; items: NavItemDef[] }> = [
     title: 'Despacho y Coyuntura',
     items: [
       { id: 'pais', label: 'Despacho Nacional', shortLabel: 'Despacho', icon: LayoutDashboard },
+      { id: 'ecosistema', label: 'Ecosistema Político', shortLabel: 'Ecosistema', icon: LayoutGrid },
       { id: 'acontecimientos', label: 'Crisis y Archivo', shortLabel: 'Crisis', icon: AlertTriangle },
       { id: 'oposicion', label: 'Opinión y Oposición', shortLabel: 'Oposición', icon: Megaphone },
     ],
@@ -790,6 +793,9 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
           )}
           {effectiveTab === 'territorio' && (
             <UruguayMap gameState={gameState} onVisitDepartment={handleVisitDepartment} />
+          )}
+          {effectiveTab === 'ecosistema' && (
+            <EcosystemView gameState={gameState} onUpdateState={(next) => commitState(next)} />
           )}
           {effectiveTab === 'partido' && (
             <PartySpaceView

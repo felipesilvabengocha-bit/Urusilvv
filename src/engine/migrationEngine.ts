@@ -18,6 +18,7 @@ import {
   LegislativeStage,
   NationalBudgetCategory,
 } from '../types/game';
+import { createInitialEcosystemState } from './ecosystemFactory';
 
 export const CURRENT_SCHEMA_VERSION = 3;
 export const BACKUP_SAVES_KEY = 'qqgu_saves_backup_pre_v3';
@@ -204,10 +205,13 @@ export function migrateGameState(rawState: GameState): GameState {
       ? rawState.publicEnterprises
       : INITIAL_PUBLIC_ENTERPRISES.map((e) => ({ ...e }));
 
-  const socialActors =
-    Array.isArray(rawState.socialActors) && rawState.socialActors.length >= 4
-      ? rawState.socialActors
-      : INITIAL_SOCIAL_ACTORS.map((a) => ({ ...a, negotiationHistory: [...a.negotiationHistory] }));
+  const existingSocialActors = Array.isArray(rawState.socialActors) ? rawState.socialActors : [];
+  const socialActors = INITIAL_SOCIAL_ACTORS.map((initial) => {
+    const saved = existingSocialActors.find((a) => a.id === initial.id);
+    return saved
+      ? { ...saved, negotiationHistory: [...(saved.negotiationHistory ?? [])] }
+      : { ...initial, negotiationHistory: [...initial.negotiationHistory] };
+  });
 
   const partyFinances =
     rawState.partyFinances && Object.keys(rawState.partyFinances).length > 0
@@ -241,7 +245,7 @@ export function migrateGameState(rawState: GameState): GameState {
           applied: false,
         }));
 
-  return {
+  const migrated: GameState = {
     ...rawState,
     version: Math.max(CURRENT_SCHEMA_VERSION, version),
     departments,
@@ -261,5 +265,10 @@ export function migrateGameState(rawState: GameState): GameState {
     partyFinances,
     governmentArchive: rawState.governmentArchive ?? [],
     electoralSupporters: rawState.electoralSupporters ?? [],
+  };
+
+  return {
+    ...migrated,
+    expansion: rawState.expansion ?? createInitialEcosystemState(migrated),
   };
 }

@@ -35,6 +35,7 @@ import {
   ScenarioId,
 } from '../types/game';
 import { generatePollSnapshot } from './electoralEngine';
+import { createInitialEcosystemState } from './ecosystemFactory';
 import { createInitialOppositionState } from './oppositionEngine';
 import { createInitialProgressionState, generateContextualObjectives } from './progressionEngine';
 
@@ -370,5 +371,6 @@ export function buildNewGameState(opts: CreateGameOptions): GameState {
 
   baseState.latestPoll = generatePollSnapshot(baseState, difficulty);
   baseState.progression.activeObjectives = generateContextualObjectives(baseState);
+  baseState.expansion = createInitialEcosystemState(baseState);
   return baseState;
 }

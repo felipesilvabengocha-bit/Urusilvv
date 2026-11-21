@@ -1,3 +1,5 @@
+import type { PoliticalEcosystemState } from './expansion';
+
 export type DifficultyId = 'muy_facil' | 'facil' | 'normal' | 'dificil' | 'realista';
 
 export type ScenarioId =
@@ -874,7 +876,17 @@ export interface DepartamentalElectionResult {
 export interface HistoricalLogEntry {
   id: string;
   dateLabel: string;
-  category: 'sistema' | 'eleccion' | 'campana' | 'gobierno' | 'economia' | 'parlamento' | 'diplomacia' | 'evento';
+  category:
+    | 'sistema'
+    | 'eleccion'
+    | 'campana'
+    | 'gobierno'
+    | 'economia'
+    | 'parlamento'
+    | 'diplomacia'
+    | 'evento'
+    | 'politica'
+    | 'sociedad';
   title: string;
   detail: string;
 }
@@ -1118,6 +1130,8 @@ export interface GameState {
     achievementsThisTerm: string[];
     canSeekReelection: boolean;
   };
+  /** Expansión integral v4: 14 subsistemas del ecosistema político. */
+  expansion?: PoliticalEcosystemState;
   history: HistoricalLogEntry[];
 }
 
@@ -1138,7 +1152,14 @@ export interface PublicEnterpriseState {
   ownDebtBillionsUSD: number;
 }
 
-export type SocialActorId = 'pit_cnt' | 'camaras_empresariales' | 'gremiales_agro' | 'congreso_intendentes';
+export type SocialActorId =
+  | 'pit_cnt'
+  | 'camaras_empresariales'
+  | 'gremiales_agro'
+  | 'congreso_intendentes'
+  | 'estudiantiles'
+  | 'sociedad_civil'
+  | 'trabajadores_rurales';
 
 export interface SocialActorState {
   id: SocialActorId;
@@ -1150,6 +1171,14 @@ export interface SocialActorState {
   politicalAffinity: number; // -100 a +100
   governmentTrust: number; // 0-100
   conflictLevel: number; // 0-100
+  mobilizationCapacity?: number; // 0-100
+  demands?: string[];
+  activeAgreement?: {
+    topic: string;
+    monthsRemaining: number;
+    fulfilled: boolean;
+  };
+  lastMobilizationDateLabel?: string;
   negotiationHistory: Array<{
     dateLabel: string;
     topic: string;

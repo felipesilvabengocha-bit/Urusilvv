@@ -6,6 +6,7 @@ import {
   Party,
 } from '../types/game';
 import { stepMonthlyEconomy } from './economyEngine';
+import { stepMonthlyEcosystem } from './ecosystemMonthlyEngine';
 import {
   didPlayerWinDeputySeat,
   didPlayerWinSenateSeat,
@@ -641,7 +642,8 @@ export function advanceOneMonth(state: GameState): GameState {
   };
 
   const afterDrift = applyOppositionStanceMonthlyDrift(rawNextState);
-  return syncProgression(state, afterDrift);
+  const withEcosystem = stepMonthlyEcosystem(afterDrift, dateLabel);
+  return syncProgression(state, withEcosystem);
 }
 
 /**
