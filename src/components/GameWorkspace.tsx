@@ -219,6 +219,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
   const handleAdvanceMonth = () => {
     const next = advanceOneMonth(gameState);
     commitState(next, true, 'advance');
+    setToastMsg(`Mes avanzado: +2 CP y fondos actualizados. ${next.lastMacroReasons[0]?.deltaLabel ?? ''}`);
   };
 
   const handleDismissMoment = () => {

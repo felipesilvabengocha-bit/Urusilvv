@@ -28,6 +28,7 @@
   }
 
   html {
+    scroll-behavior: smooth;
     font-family: var(--font-body);
     background-color: #0F1415;
     color: #DFE3E4;
@@ -192,6 +193,42 @@
 
 .animate-editorial-in {
   animation: subtleFadeSlide 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Transiciones suaves globales para tarjetas y botones interactivos */
+button, a, input, select, textarea {
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.18s ease;
+}
+
+.warroom-card, .warroom-surface {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.warroom-card:hover {
+  transform: translateY(-1px);
+}
+
+/* Scroll suave en contenedores principales */
+main, .overflow-y-auto, .overflow-auto {
+  scroll-behavior: smooth;
+}
+
+/* Animación de entrada escalonada para listas */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Pulso suave para indicadores de estado */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-soft-pulse {
+  animation: softPulse 2s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
