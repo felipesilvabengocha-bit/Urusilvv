@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   AlertTriangle,
   Award,
@@ -40,19 +40,19 @@ import { CreditsFooter } from './CreditsFooter';
 import { NarrativeMomentModal } from './NarrativeMomentModal';
 import { TermEndModal } from './TermEndModal';
 import { UruguayMap } from './UruguayMap';
+import { CampaignAndElectionsView } from './views/CampaignAndElectionsView';
 import { CareerProgressionView } from './views/CareerProgressionView';
-import { GovSectionId } from './views/GovernmentAndCabinetView';
+import {
+  DiplomacyView,
+  EventsAndOpsView,
+  HistoricalLogView,
+} from './views/DiplomacyEventsAndLogView';
+import { EconomyAndBudgetView } from './views/EconomyAndBudgetView';
+import { GovernmentAndCabinetView, GovSectionId } from './views/GovernmentAndCabinetView';
+import { OppositionView } from './views/OppositionView';
+import { ParliamentView } from './views/ParliamentView';
 import { ResourcesAndActionsView } from './views/ResourcesAndActionsView';
 import { NationalSummaryView, PartySpaceView } from './views/SummaryAndPartyView';
-
-const CampaignAndElectionsView = lazy(() => import('./views/CampaignAndElectionsView').then((m) => ({ default: m.CampaignAndElectionsView })));
-const DiplomacyView = lazy(() => import('./views/DiplomacyEventsAndLogView').then((m) => ({ default: m.DiplomacyView })));
-const EventsAndOpsView = lazy(() => import('./views/DiplomacyEventsAndLogView').then((m) => ({ default: m.EventsAndOpsView })));
-const HistoricalLogView = lazy(() => import('./views/DiplomacyEventsAndLogView').then((m) => ({ default: m.HistoricalLogView })));
-const EconomyAndBudgetView = lazy(() => import('./views/EconomyAndBudgetView').then((m) => ({ default: m.EconomyAndBudgetView })));
-const GovernmentAndCabinetView = lazy(() => import('./views/GovernmentAndCabinetView').then((m) => ({ default: m.GovernmentAndCabinetView })));
-const OppositionView = lazy(() => import('./views/OppositionView').then((m) => ({ default: m.OppositionView })));
-const ParliamentView = lazy(() => import('./views/ParliamentView').then((m) => ({ default: m.ParliamentView })));
 
 interface GameWorkspaceProps {
   gameState: GameState;
@@ -780,7 +780,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
             </div>
           )}
 
-          <Suspense fallback={<div className="animate-pulse text-center text-xs text-[#CDC6B8] py-8">Cargando…</div>}>
+
           {effectiveTab === 'pais' && (
             <NationalSummaryView
               gameState={gameState}
@@ -867,7 +867,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
             </div>
           )}
           {activeTab === 'carrera' && <CareerProgressionView gameState={gameState} />}
-          </Suspense>
+
 
           <div className="pt-2 lg:hidden">
             <CreditsFooter variant="dark" compact />
