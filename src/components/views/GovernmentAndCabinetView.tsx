@@ -777,7 +777,7 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
                     targetDept.id,
                     `Plan de infraestructura y servicios — ${targetDept.name}`,
                     caps.currentOffice === 'alcalde' ? 'municipio' : 'intendencia',
-                    25,
+                    2,
                     6,
                     'Mejora de infraestructura, servicios y empleo territorial.'
                   );
@@ -786,7 +786,7 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
                 }}
                 className="executive-action-btn min-h-[36px] rounded-lg px-3 py-1.5 text-xs font-bold disabled:cursor-not-allowed disabled:opacity-45"
               >
-                Iniciar Obra (-4 CP, $25M, 6 meses)
+                Iniciar Obra (-4 CP, $2M, 6 meses)
               </button>
             </div>
             {(gameState.publicWorksOrders ?? []).filter((w) => w.departmentId === targetDept.id).length === 0 ? (
