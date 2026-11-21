@@ -265,7 +265,7 @@ export function buildNewGameState(opts: CreateGameOptions): GameState {
       biography: opts.biography,
       attributes: opts.attributes,
       relations,
-      politicalCapital: Math.round(52 + (opts.attributes.negotiation - 50) * 0.4),
+      politicalCapital: Math.round(40 + (opts.attributes.negotiation - 50) * 0.4),
       campaignFundsUYU: Math.round(12000000 * difficulty.startingFundsMultiplier),
       termsServedInCurrentOffice: 0,
       totalMonthsInCareer: 0,
