@@ -314,7 +314,7 @@ export const EventsAndOpsView: React.FC<DiplomacyEventsProps> = ({ gameState, on
           p.id === gameState.player.partyId ? { ...p, partyStrength: nextInd.partyStrength } : p
         );
         nextPop = Math.min(98, Number((nextPop + 1.5).toFixed(1)));
-        nextCap = Math.min(100, nextCap + 3);
+        // Sin reintegro de CP: el costo de la comisión investigadora se consume.
         nextOpposition = {
           ...gameState.opposition,
           parliamentaryControlsExecuted: (gameState.opposition.parliamentaryControlsExecuted ?? 0) + 1,

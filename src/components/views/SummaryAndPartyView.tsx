@@ -628,12 +628,16 @@ export const NationalSummaryView: React.FC<SummaryViewProps> = ({
 interface PartyViewProps {
   gameState: GameState;
   onNegotiateWithParty: (partyId: string) => void;
+  onRequestSupport?: (partyId: string) => void;
+  onRequestElectoralSupport?: (partyId: string) => void;
   onUpdateState: (next: GameState) => void;
 }
 
 export const PartySpaceView: React.FC<PartyViewProps> = ({
   gameState,
   onNegotiateWithParty,
+  onRequestSupport,
+  onRequestElectoralSupport,
   onUpdateState,
 }) => {
   const [partyMsg, setPartyMsg] = useState<string | null>(null);
@@ -914,12 +918,100 @@ export const PartySpaceView: React.FC<PartyViewProps> = ({
                   </div>
                 </div>
 
-                <button
-                  onClick={() => onNegotiateWithParty(rel.partyId)}
-                  className="min-h-[38px] rounded-lg border border-[#574239]/55 bg-[#262B2C] px-3 py-1.5 text-xs font-bold text-[#DFE3E4] transition hover:border-[#E87532] hover:text-[#FFB691]"
-                >
-                  Diálogo bilateral (-4 CP)
-                </button>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={() => onNegotiateWithParty(rel.partyId)}
+                    className="min-h-[38px] rounded-lg border border-[#574239]/55 bg-[#262B2C] px-3 py-1.5 text-xs font-bold text-[#DFE3E4] transition hover:border-[#E87532] hover:text-[#FFB691]"
+                  >
+                    Mejorar relación (-4 CP)
+                  </button>
+                  {onRequestSupport && (
+                    <button
+                      onClick={() => onRequestSupport(rel.partyId)}
+                      className="min-h-[38px] rounded-lg border border-[#557568]/55 bg-[#557568]/20 px-3 py-1.5 text-xs font-bold text-[#ACCEBF] transition hover:bg-[#557568]/35"
+                    >
+                      Pedir apoyo (-3 CP)
+                    </button>
+                  )}
+                  {onRequestElectoralSupport && !(gameState.electoralSupporters ?? []).includes(rel.partyId) && (
+                    <button
+                      onClick={() => onRequestElectoralSupport(rel.partyId)}
+                      className="min-h-[38px] rounded-lg border border-[#E87532]/55 bg-[#E87532]/15 px-3 py-1.5 text-xs font-bold text-[#FFB691] transition hover:bg-[#E87532]/30"
+                    >
+                      Pedir apoyo electoral (-4 CP)
+                    </button>
+                  )}
+                  {(gameState.electoralSupporters ?? []).includes(rel.partyId) && (
+                    <span className="min-h-[38px] inline-flex items-center rounded-lg border border-[#ACCEBF]/45 bg-[#557568]/20 px-3 py-1.5 text-xs font-bold text-[#ACCEBF]">
+                      Te apoya
+                    </span>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Candidatos y referentes de otros lemas: mejorar relación y pedir apoyo por separado */}
+      <section className="warroom-card rounded-xl p-5 shadow-md">
+        <h3 className="flex items-center gap-2 font-display text-base font-bold text-[#DFE3E4]">
+          <Users className="h-4 w-4 text-[#E87532]" />
+          Candidatos y referentes de otros lemas
+        </h3>
+        <p className="mt-1 text-xs text-[#CDC6B8]">
+          Mejorá la relación o pedí apoyo político por separado a cada candidato/referente, sin formalizar alianza.
+        </p>
+        <div className="mt-4 space-y-2.5">
+          {gameState.player.relations.map((rel) => {
+            const party = gameState.parties.find((p) => p.id === rel.partyId);
+            if (!party) return null;
+            const leader = party.sectors[0]?.leader ?? party.acronym;
+            return (
+              <div
+                key={`cand_${rel.partyId}`}
+                className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-[#574239]/40 bg-[#171C1D] p-3"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="h-3.5 w-3.5 rounded-sm" style={{ backgroundColor: party.color }} />
+                  <div>
+                    <div className="text-sm font-bold text-[#DFE3E4]">
+                      {leader} <span className="text-xs font-normal text-[#DEC1B4]">· {party.acronym}</span>
+                    </div>
+                    <div className="text-[11px] text-[#CDC6B8]">
+                      Afinidad: {rel.affinity} · Intención: {party.currentPollShare.toFixed(1)}%
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={() => onNegotiateWithParty(rel.partyId)}
+                    className="min-h-[34px] rounded-lg border border-[#574239]/55 bg-[#262B2C] px-3 py-1.5 text-xs font-bold text-[#DFE3E4] transition hover:border-[#E87532] hover:text-[#FFB691]"
+                  >
+                    Mejorar relación (-4 CP)
+                  </button>
+                  {onRequestSupport && (
+                    <button
+                      onClick={() => onRequestSupport(rel.partyId)}
+                      className="min-h-[34px] rounded-lg border border-[#557568]/55 bg-[#557568]/20 px-3 py-1.5 text-xs font-bold text-[#ACCEBF] transition hover:bg-[#557568]/35"
+                    >
+                      Pedir apoyo (-3 CP)
+                    </button>
+                  )}
+                  {onRequestElectoralSupport && !(gameState.electoralSupporters ?? []).includes(rel.partyId) && (
+                    <button
+                      onClick={() => onRequestElectoralSupport(rel.partyId)}
+                      className="min-h-[34px] rounded-lg border border-[#E87532]/55 bg-[#E87532]/15 px-3 py-1.5 text-xs font-bold text-[#FFB691] transition hover:bg-[#E87532]/30"
+                    >
+                      Pedir apoyo electoral (-4 CP)
+                    </button>
+                  )}
+                  {(gameState.electoralSupporters ?? []).includes(rel.partyId) && (
+                    <span className="min-h-[34px] inline-flex items-center rounded-lg border border-[#ACCEBF]/45 bg-[#557568]/20 px-3 py-1.5 text-xs font-bold text-[#ACCEBF]">
+                      Te apoya
+                    </span>
+                  )}
+                </div>
               </div>
             );
           })}

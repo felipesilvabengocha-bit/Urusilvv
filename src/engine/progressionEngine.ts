@@ -906,7 +906,7 @@ export function syncProgression(prev: GameState, next: GameState): GameState {
     ...next,
     player: {
       ...next.player,
-      politicalCapital: Math.min(100, next.player.politicalCapital + capitalBonus),
+      politicalCapital: Math.min(100, next.player.politicalCapital),
       campaignFundsUYU: next.player.campaignFundsUYU + moneyBonus,
     },
     progression: {

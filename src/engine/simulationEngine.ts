@@ -75,7 +75,7 @@ export function advanceOneMonth(state: GameState): GameState {
   // 1 & 2. Actualizar economía, políticas públicas activas e indicadores sociales/departamentales
   const econStep = stepMonthlyEconomy(state);
   let nextMacro = econStep.nextMacro;
-  const nextDepartments = econStep.nextDepartments;
+  let nextDepartments = econStep.nextDepartments;
   const nextNationalBudget = econStep.nextNationalBudget;
   const nextActivePolicies = econStep.nextActivePolicies;
 
@@ -141,10 +141,7 @@ export function advanceOneMonth(state: GameState): GameState {
   );
 
   // Recuperación mensual equilibrada de capital político y aportes partidarios
-  const monthlyCapitalRegen =
-    state.player.currentOffice === 'presidente' || state.player.currentOffice === 'intendente'
-      ? 10
-      : 8;
+  const monthlyCapitalRegen = 2;
   const nextPoliticalCapital = Math.round(clamp(state.player.politicalCapital + monthlyCapitalRegen, 0, 100));
   const monthlyFunds =
     state.careerPhase === 'campana'
@@ -239,6 +236,42 @@ export function advanceOneMonth(state: GameState): GameState {
   // 7c. Evolución mensual de Gabinete, 5 Empresas Públicas y 4 Actores Sociales
   const cabEntStep = stepMonthlyCabinetEnterprisesAndActors(tempWithParties, dateLabel);
 
+  // 7d. Avance mensual de obras públicas territoriales (costo, plazo y resultado medible)
+  const nextWorkOrders: GameState['publicWorksOrders'] = [];
+  const workOrderLogs: GameState['history'] = [];
+  for (const work of state.publicWorksOrders ?? []) {
+    if (work.status === 'completada') {
+      nextWorkOrders.push(work);
+      continue;
+    }
+    const remaining = work.remainingMonths - 1;
+    if (remaining <= 0) {
+      nextDepartments = nextDepartments.map((d) => {
+        if (d.id !== work.departmentId) return d;
+        const infra = (d.infrastructureScore ?? d.localServiceQuality ?? 50) + 4;
+        const unemp = Math.max(3.5, d.unemploymentRate - 0.25);
+        return {
+          ...d,
+          infrastructureScore: Math.min(98, infra),
+          localServiceQuality: Math.min(98, d.localServiceQuality + 3),
+          unemploymentRate: Number(unemp.toFixed(1)),
+          accumulatedInvestmentUYU: (d.accumulatedInvestmentUYU ?? 0) + work.costMillionsUYU,
+        };
+      });
+      const completedWork = { ...work, remainingMonths: 0, status: 'completada' as const };
+      nextWorkOrders.push(completedWork);
+      workOrderLogs.push({
+        id: `obra_done_${work.id}_${Date.now()}`,
+        dateLabel,
+        category: 'gobierno',
+        title: `Obra completada: ${work.title}`,
+        detail: `${work.effectSummary} · ${work.departmentId} · Inversión $ ${work.costMillionsUYU}M UYU.`,
+      });
+    } else {
+      nextWorkOrders.push({ ...work, remainingMonths: remaining });
+    }
+  }
+
   // 8. Actualizar apoyo parlamentario real en función de bancas + coalición
   const chambers = getActiveChambers(tempWithParties);
   const coalitionSeats = state.coalitionPartyIds.reduce(
@@ -272,6 +305,9 @@ export function advanceOneMonth(state: GameState): GameState {
   }
   if (cabEntStep.cabinetLogs.length > 0) {
     extraLogs.push(...cabEntStep.cabinetLogs);
+  }
+  if (workOrderLogs.length > 0) {
+    extraLogs.push(...workOrderLogs);
   }
   if (aiGovLogNote) {
     extraLogs.push({
@@ -573,6 +609,7 @@ export function advanceOneMonth(state: GameState): GameState {
     publicEnterprises: cabEntStep.nextPublicEnterprises,
     socialActors: cabEntStep.nextSocialActors,
     departments: nextDepartments,
+    publicWorksOrders: nextWorkOrders,
     parties: syncedParties,
     activePolicies: nextActivePolicies,
     latestPoll,
@@ -803,7 +840,7 @@ export function startNextCareerCycle(
       ...state.player,
       targetOffice: nextOffice,
       targetDepartment: nextDepartment,
-      politicalCapital: Math.min(100, state.player.politicalCapital + 15),
+      politicalCapital: state.player.politicalCapital,
     },
     history: [
       {

@@ -260,5 +260,6 @@ export function migrateGameState(rawState: GameState): GameState {
     publicWorksOrders: rawState.publicWorksOrders ?? [],
     partyFinances,
     governmentArchive: rawState.governmentArchive ?? [],
+    electoralSupporters: rawState.electoralSupporters ?? [],
   };
 }

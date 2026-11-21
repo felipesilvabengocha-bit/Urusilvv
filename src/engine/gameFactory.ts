@@ -248,6 +248,7 @@ export function buildNewGameState(opts: CreateGameOptions): GameState {
     resourceActionsThisMonth: 0,
     activePolicies: [],
     electoralAlliances: [],
+    electoralSupporters: [],
     coalitionPromisedMinistries: {},
     partyMergers: [],
     player: {

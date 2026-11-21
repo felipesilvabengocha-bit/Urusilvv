@@ -282,6 +282,93 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
     setToastMsg(`Diálogo bilateral con ${target?.name} (+6 afinidad).`);
   };
 
+  const handleRequestSupport = (partyId: string) => {
+    if (gameState.player.politicalCapital < 3) {
+      setToastMsg('Capital político insuficiente (se requieren 3 puntos).');
+      return;
+    }
+    const target = gameState.parties.find((p) => p.id === partyId);
+    const nextRelations = gameState.player.relations.map((r) =>
+      r.partyId === partyId ? { ...r, affinity: Math.min(100, r.affinity + 2) } : r
+    );
+    const nextBills = gameState.bills.map((b) => {
+      if (b.status !== 'en_negociacion') return b;
+      const prev = b.negotiatedPartySupport[partyId] ?? 0;
+      return {
+        ...b,
+        negotiatedPartySupport: { ...b.negotiatedPartySupport, [partyId]: Math.min(0.45, prev + 0.15) },
+      };
+    });
+    commitState({
+      ...gameState,
+      bills: nextBills,
+      player: {
+        ...gameState.player,
+        politicalCapital: gameState.player.politicalCapital - 3,
+        relations: nextRelations,
+      },
+      history: [
+        {
+          id: `sup_${Date.now()}`,
+          dateLabel: `${MONTH_NAMES[gameState.currentMonth - 1]} ${gameState.currentYear}`,
+          category: 'gobierno',
+          title: `Pedido de apoyo a ${target?.name ?? partyId}`,
+          detail: 'Se solicitó respaldo parlamentario para iniciativas en trámite (+0.15 por proyecto).',
+        },
+        ...gameState.history,
+      ],
+    });
+    setToastMsg(`Pedido de apoyo a ${target?.name} registrado (-3 CP).`);
+  };
+
+  const handleRequestElectoralSupport = (partyId: string) => {
+    if (gameState.player.politicalCapital < 4) {
+      setToastMsg('Capital político insuficiente (se requieren 4 puntos).');
+      return;
+    }
+    const target = gameState.parties.find((p) => p.id === partyId);
+    if (!target || target.id === gameState.player.partyId) return;
+    if ((gameState.electoralSupporters ?? []).includes(partyId)) {
+      setToastMsg(`${target.name} ya te está apoyando.`);
+      return;
+    }
+    const rel = gameState.player.relations.find((r) => r.partyId === partyId);
+    const affinity = rel?.affinity ?? 0;
+    const rng = Math.random();
+    const guaranteed = affinity > 75;
+    const success = guaranteed ? true : rng < (affinity / 100) * 0.7;
+    if (!success) {
+      setToastMsg(`${target.name} rechazó apoyarte (afinidad ${affinity}%).`);
+      return;
+    }
+    const supporterShare = target.currentPollShare;
+    const nextParties = gameState.parties.map((p) => {
+      if (p.id === partyId) return { ...p, currentPollShare: 0, baseNationalShare: 0 };
+      if (p.id === gameState.player.partyId) return { ...p, currentPollShare: Number((p.currentPollShare + supporterShare).toFixed(2)) };
+      return p;
+    });
+    commitState({
+      ...gameState,
+      parties: nextParties,
+      electoralSupporters: [...(gameState.electoralSupporters ?? []), partyId],
+      player: {
+        ...gameState.player,
+        politicalCapital: gameState.player.politicalCapital - 4,
+      },
+      history: [
+        {
+          id: `sup_el_${Date.now()}`,
+          dateLabel: `${MONTH_NAMES[gameState.currentMonth - 1]} ${gameState.currentYear}`,
+          category: 'campana',
+          title: `Apoyo electoral de ${target.name}`,
+          detail: `${target.name} se retira y transfiere ${supporterShare.toFixed(1)}% de intención de voto a tu lema.`,
+        },
+        ...gameState.history,
+      ],
+    });
+    setToastMsg(`${target.name} te apoya: sus votos se suman a tu lema (-4 CP).`);
+  };
+
   const handleVisitDepartment = (deptId: DepartmentId) => {
     const res = visitDepartmentInCampaign(gameState, deptId);
     commitState(res.nextState);
@@ -473,7 +560,7 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
       {/* Área principal War Room + Barra Superior Fija + Dock iPhone */}
       <div className="flex h-full min-w-0 flex-1 flex-col overflow-hidden">
         {/* Topbar Fija HUD Stitch */}
-        <header className="safe-top z-30 shrink-0 border-b border-[#574239]/35 bg-[#171C1D]/95 px-3.5 py-2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] backdrop-blur-xl sm:px-6">
+        <header className="safe-top sticky top-0 z-30 shrink-0 border-b border-[#574239]/35 bg-[#171C1D]/95 px-3.5 py-2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] backdrop-blur-xl sm:px-6">
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center justify-between gap-2">
               <div className="flex min-w-0 items-center gap-2">
@@ -706,6 +793,8 @@ export const GameWorkspace: React.FC<GameWorkspaceProps> = ({
             <PartySpaceView
               gameState={gameState}
               onNegotiateWithParty={handleNegotiateParty}
+              onRequestSupport={handleRequestSupport}
+              onRequestElectoralSupport={handleRequestElectoralSupport}
               onUpdateState={(next) => commitState(next)}
             />
           )}

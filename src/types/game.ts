@@ -1078,6 +1078,7 @@ export interface GameState {
   coalitionPartyIds: string[];
   coalitionPromisedMinistries?: Record<string, number>;
   electoralAlliances?: ElectoralAlliance[];
+  electoralSupporters?: string[];
   partyMergers?: PartyMergerRecord[];
   activePolicies?: ActivePublicPolicy[];
   enactedLawModifiers?: {

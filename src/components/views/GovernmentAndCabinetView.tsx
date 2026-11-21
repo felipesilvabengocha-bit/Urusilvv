@@ -28,6 +28,7 @@ import {
   negotiateWithSocialActor,
   nominateEnterpriseDirector,
 } from '../../engine/publicEnterprisesAndActorsEngine';
+import { startDepartmentWorkOrder } from '../../engine/territorialEngine';
 import {
   DepartamentalBudgetCategory,
   DepartamentalDirectorCandidate,
@@ -762,6 +763,61 @@ export const GovernmentAndCabinetView: React.FC<GovCabinetViewProps> = ({
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Obras públicas con ciclo de ejecución (costo, plazo, resultado medible) */}
+          <div className="border-t border-[#574239]/40 pt-4">
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+              <div className="text-xs font-bold text-[#DFE3E4]">Obras Públicas en Ejecución — {targetDept.name}</div>
+              <button
+                disabled={!caps.canExecuteDepartamentalWorks}
+                onClick={() => {
+                  const r = startDepartmentWorkOrder(
+                    gameState,
+                    targetDept.id,
+                    `Plan de infraestructura y servicios — ${targetDept.name}`,
+                    caps.currentOffice === 'alcalde' ? 'municipio' : 'intendencia',
+                    25,
+                    6,
+                    'Mejora de infraestructura, servicios y empleo territorial.'
+                  );
+                  setGovMessage(r.message);
+                  if (r.ok) onUpdateState(r.nextState);
+                }}
+                className="executive-action-btn min-h-[36px] rounded-lg px-3 py-1.5 text-xs font-bold disabled:cursor-not-allowed disabled:opacity-45"
+              >
+                Iniciar Obra (-4 CP, $25M, 6 meses)
+              </button>
+            </div>
+            {(gameState.publicWorksOrders ?? []).filter((w) => w.departmentId === targetDept.id).length === 0 ? (
+              <p className="text-[11px] text-[#CDC6B8]">Sin obras registradas. Iniciá una obra para ver su avance mensual y su impacto en los indicadores del departamento.</p>
+            ) : (
+              <div className="space-y-2">
+                {(gameState.publicWorksOrders ?? [])
+                  .filter((w) => w.departmentId === targetDept.id)
+                  .map((w) => (
+                    <div key={w.id} className="rounded-lg border border-[#574239]/40 bg-[#1B2021] p-3 text-xs">
+                      <div className="flex items-center justify-between">
+                        <span className="font-semibold text-[#DFE3E4]">{w.title}</span>
+                        <span className={`font-mono-data text-[10px] font-bold ${w.status === 'completada' ? 'text-[#ACCEBF]' : 'text-[#FFB691]'}`}>
+                          {w.status === 'completada' ? 'Completada' : `${w.remainingMonths}/${w.totalMonths} meses`}
+                        </span>
+                      </div>
+                      <div className="mt-1 font-mono-data text-[10px] text-[#DEC1B4]">
+                        {w.authorityLevel} · $ {w.costMillionsUYU}M UYU · {w.effectSummary}
+                      </div>
+                      {w.status !== 'completada' && (
+                        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-[#0A0F10]">
+                          <div
+                            className="h-full rounded-full bg-[#E87532]"
+                            style={{ width: `${((w.totalMonths - w.remainingMonths) / w.totalMonths) * 100}%` }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  ))}
+              </div>
+            )}
           </div>
         </section>
       )}
